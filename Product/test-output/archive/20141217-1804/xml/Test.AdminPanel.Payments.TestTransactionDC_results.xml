@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestTransaction DebitCard"
+           tests="1"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="11.232">
+  <properties />
+            <testcase name="test_DC_HDFC2" time="11.232" classname="Test.AdminPanel.Payments.TestTransactionDC">
+                <failure type="java.lang.NullPointerException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.NullPointerException
+  Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+  Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+  Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:788)
+  Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:764)
+  Test.AdminPanel.Payments.TestTransactionDC.test_DC_HDFC2(TestTransactionDC.java:777)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+  org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+  java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+  
+</testsuite>

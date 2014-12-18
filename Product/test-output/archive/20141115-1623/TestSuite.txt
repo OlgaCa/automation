@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 17.015 sec <<< FAILURE!
+blackListedPhoneNoGlobal(Test.AdminPanel.Filters.TestBlackListing)  Time elapsed: 4.277 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 516 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ShishirDwivedi', ip: '192.168.1.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 541e5138-0e89-4e4b-9e65-c58d4552c7ed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at Utils.Browser.navigateToURL(Browser.java:322)
+	at PageObject.AdminPanel.Home.AdminPage.<init>(AdminPage.java:23)
+	at Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)
+	at PageObject.AdminPanel.Filters.RiskHomePage.getTransactionPage(RiskHomePage.java:153)
+	at Test.AdminPanel.Filters.TestBlackListing.blackListedPhoneNoGlobal(TestBlackListing.java:359)
+Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ShishirDwivedi', ip: '192.168.1.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown
+	at <anonymous class>.nsCommandProcessor.prototype.execute(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous530206056237637319webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11706)
+	at <anonymous class>.Dispatcher.executeAs/<(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous530206056237637319webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8437)
+	at <anonymous class>.Resource.prototype.handle(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous530206056237637319webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8584)
+	at <anonymous class>.Dispatcher.prototype.dispatch(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous530206056237637319webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8531)
+	at <anonymous class>.WebDriverServer/<.handle(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous530206056237637319webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11489)
+	at <anonymous class>.createHandlerFunc/<(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous530206056237637319webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+	at <anonymous class>.ServerHandler.prototype.handleResponse(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous530206056237637319webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+	at <anonymous class>.Connection.prototype.process(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous530206056237637319webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+	at <anonymous class>.RequestReader.prototype._handleResponse(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous530206056237637319webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+	at <anonymous class>.RequestReader.prototype._processBody(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous530206056237637319webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+	at <anonymous class>.RequestReader.prototype.onInputStreamReady(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous530206056237637319webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
+

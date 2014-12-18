@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>TestNG:  TestTransaction NetBanking</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestTransaction NetBanking</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 11 12:00:51 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>52 seconds (52680 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td>none </td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.AdminPanel.Payments.TestTransactionNB.test_NB_AXISNB()'><b>test_NB_AXISNB</b><br>Test class: Test.AdminPanel.Payments.TestTransactionNB<br>Test method: Verify net banking transaction through AXISNB gateway<br>Parameters: Utils.Config@1ce92674<br/>
+<a href="#Output-246094549" onClick='toggleBox("Output-246094549", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-246094549" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-246094549">
+<font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'PaymentType'</font></br><br/>
+<font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'TransactionDetails'</font></br><br/>
+<font color='Black'>Navigate to web page- 'https://admin.payu.in/home'</font></br><br/>
+<font color='Black'>Added the cookie - Name: 'test_name' Value: 'Test.AdminPanel.Payments.TestTransactionNB.test_NB_AXISNB' Domain: '.payu.in' Expiry: 'Wed Nov 12 12:01:14 IST 2014'</font></br><br/>
+<font color='Black'>Wait for page load by waiting for element [link text: Admin Login]</font></br><br/>
+<font color='Black'>Click on 'Admin Login link'</font></br><br/>
+<font color='Black'>Wait for page load by waiting for element [id: username]</font></br><br/>
+<font color='Black'>Enter the User name as 'qc2'</font></br><br/>
+<font color='Black'>Enter the Password as 'Password2'</font></br><br/>
+<font color='Black'>Click on 'Submit Button'</font></br><br/>
+<font color='Black'>Wait for page load by waiting for element [link text: Test Transaction]</font></br><br/>
+<font color='Black'>Navigate to web page- 'https://admin.payu.in/home'</font></br><br/>
+<font color='Black'>Added the cookie - Name: 'test_name' Value: 'Test.AdminPanel.Payments.TestTransactionNB.test_NB_AXISNB' Domain: '.payu.in' Expiry: 'Wed Nov 12 12:01:17 IST 2014'</font></br><br/>
+<font color='Black'>Wait for page load by waiting for element [link text: Test Transaction]</font></br><br/>
+<font color='Black'>Click on 'Test Transaction Link'</font></br><br/>
+<font color='Black'>Wait for page load by waiting for element [name: amount]</font></br><br/>
+<font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'PGInfo'</font></br><br/>
+<font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'SQL'</font></br><br/>
+<font color='Black'>Executing the query - 'select count(*) cnt from merchant_payment_type mpt where mpt.merchantid='5912' and mpt.ibibo_code = 'AXIB' and mpt.pg_id = '23' and mpt.active=1;'</font></br><br/>
+<font color='Black'>Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu</font></br><br/>
+<font color='Black'>Connection succeeded</font></br><br/>
+<font color='Green'>Verified that payment type AXIB with pg_gateway_id 23 is present for merchantid 5912</font></br><br/>
+<font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'SQL'</font></br><br/>
+<font color='Black'>Executing the query - 'select * from paymentgateway pg where pg.key = 'AXISNB' and pg.isactive=1;'</font></br><br/>
+<font color='Black'>Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu</font></br><br/>
+<font color='Black'>Connection succeeded</font></br><br/>
+<font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'TransactionDetails'</font></br><br/>
+<font color='Black'>Click on 'Merchant Drop Down'</font></br><br/>
+<font color='Black'>Wait for '1' seconds</font></br><br/>
+<font color='Black'>Enter the Search Merchant Key as ' - YAcQGY'</font></br><br/>
+<font color='Black'>Wait for '2' seconds</font></br><br/>
+<font color='Black'>Get the WebElement with xPath://label/span[contains(text(),' - YAcQGY')]</font></br><br/>
+<font color='Black'>Click on 'Merchant'</font></br><br/>
+<font color='Black'>Enter the Amount as '3.00'</font></br><br/>
+<font color='Black'>Submit 'Transaction'</font></br><br/>
+<font color='Black'>Wait for page load by waiting for element [xpath: //p[@id='amountdiv']/span]</font></br><br/>
+<font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'SQL'</font></br><br/>
+<font color='Black'>Executing the query - 'select * from paymentgateway pg where pg.key = 'AXISNB' and pg.isactive=1;'</font></br><br/>
+<font color='Black'>Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu</font></br><br/>
+<font color='Black'>Connection succeeded</font></br><br/>
+<font color='Black'>Click on 'Net Banking Tab'</font></br><br/>
+<font color='Black'>Wait for page load by waiting for element [id: netbanking_select]</font></br><br/>
+<font color='Black'>Select the Bank Name - AXIS Bank NetBanking dropdown text 'AXIS Bank NetBanking'</font></br><br/>
+<font color='Black'>Wait for '1' seconds</font></br><br/>
+<font color='Black'>Click on 'Pay Now'</font></br><br/>
+<font color='Black'>Wait for '10' seconds</font></br><br/>
+<font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'BankRedirect'</font></br><br/>
+<font color='Green'>Verified 'Browser URL' as :-'https://www.axisbank.co.in/bankaway/(s(yprr5giotssi1da2m15nirba))/web/l001/retail/jsp/ebpp/retshoppingmallsignon.aspx?requestid=38923520'</font></br><br/>
+<font color='Black'>Wait for '5' seconds</font></br><br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Test.AdminPanel.Payments.TestTransactionNB@2a2d45ba</td></tr>
+</table><p>
+</body>
+</html>

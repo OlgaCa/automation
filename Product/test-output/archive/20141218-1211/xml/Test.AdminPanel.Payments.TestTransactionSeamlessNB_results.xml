@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestTransaction Seamless NB"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="39.328">
+  <properties />
+  
+  
+            <testcase name="test_Seamless_NB_AXISNB" time="39.328" classname="Test.AdminPanel.Payments.TestTransactionSeamlessNB" />
+      
+</testsuite>

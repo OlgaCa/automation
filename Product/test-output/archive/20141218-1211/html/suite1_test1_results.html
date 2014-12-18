@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - SeamlessStoreCard</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>SeamlessStoreCard</h1>
+<p>
+  Test duration: 128.945s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">Test.AdminPanel.Payments.TestSeamlessStoreCard</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Save a new Store Card">Save_new_store_DCcard</span>
+      </td>
+  <td class="duration">
+    14.562s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">Utils.Config@2aa3cd93</span><br />
+    
+            <div class="testOutput">
+                        &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Navigate to web page- &apos;https://admin.payu.in/home&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Fri Dec 19 17:42:02 IST 2014&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [link text: Admin Login]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Admin Login link&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [id: username]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the User name as &apos;qc2&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Password as &apos;Password2&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Submit Button&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [link text: Test Transaction]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select count(*) cnt from merchant_payment_type mpt where mpt.merchantid=&apos;5910&apos; and mpt.ibibo_code = &apos;MAES&apos; and mpt.pg_id = &apos;&apos; and mpt.active=1;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/home&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-12-18_17-42-06_Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard.png target=&apos;_blank&apos; &gt;2014-12-18_17-42-06_Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard.png&lt;/a&gt;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select * from paymentgateway pg where pg.key = &apos;AXISPG&apos; and pg.isactive=1;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;No data was returned for this query&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/home&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-12-18_17-42-09_Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard.png target=&apos;_blank&apos; &gt;2014-12-18_17-42-09_Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard.png&lt;/a&gt;&lt;/font&gt;&lt;/br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)<br />
+              Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)<br />
+              Test.AdminPanel.Payments.TransactionHelper.DoPaymentAndSaveCard(TransactionHelper.java:206)<br />
+              Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard(TestSeamlessStoreCard.java:46)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)<br />
+              org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)<br />
+              java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="save and do transaction using saved Card in seamless flow">testTransactionSavedSeamlessStoredcard</span>
+      </td>
+  <td class="duration">
+    16.202s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">Utils.Config@6293abcc</span><br />
+    
+            <div class="testOutput">
+                        &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Navigate to web page- &apos;https://admin.payu.in/home&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Fri Dec 19 17:42:10 IST 2014&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [link text: Admin Login]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Admin Login link&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [id: username]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the User name as &apos;qc2&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Password as &apos;Password2&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Submit Button&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [link text: Test Transaction]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select count(*) cnt from merchant_payment_type mpt where mpt.merchantid=&apos;5912&apos; and mpt.ibibo_code = &apos;MAST&apos; and mpt.pg_id = &apos;&apos; and mpt.active=1;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/home&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-12-18_17-42-14_Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard.png target=&apos;_blank&apos; &gt;2014-12-18_17-42-14_Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard.png&lt;/a&gt;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select * from paymentgateway pg where pg.key = &apos;HDFCPG&apos; and pg.isactive=1;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;No data was returned for this query&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/home&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-12-18_17-42-18_Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard.png target=&apos;_blank&apos; &gt;2014-12-18_17-42-18_Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard.png&lt;/a&gt;&lt;/font&gt;&lt;/br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)<br />
+              Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)<br />
+              Test.AdminPanel.Payments.TransactionHelper.DoPaymentAndSaveCard(TransactionHelper.java:206)<br />
+              Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard(TestSeamlessStoreCard.java:379)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)<br />
+              org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)<br />
+              java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">Test.AdminPanel.Payments.TestSeamlessStoreCard</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Use Saved Card">SavedDebitCardTransaction</span>
+      </td>
+  <td class="duration">
+    95.898s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">Utils.Config@5db250b4</span><br />
+    
+            <div class="testOutput">
+                        &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Navigate to web page- &apos;https://admin.payu.in/home&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Fri Dec 19 17:41:56 IST 2014&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [link text: Admin Login]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Admin Login link&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [id: username]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the User name as &apos;qc2&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Password as &apos;Password2&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Submit Button&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [link text: Test Transaction]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select count(*) cnt from merchant_payment_type mpt where mpt.merchantid=&apos;5914&apos; and mpt.ibibo_code = &apos;VISA&apos; and mpt.pg_id = &apos;38&apos; and mpt.active=1;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified that payment type VISA with pg_gateway_id 38 is present for merchantid 5914&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select * from paymentgateway pg where pg.key = &apos;SBIPG&apos; and pg.isactive=1;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Navigate to web page- &apos;https://admin.payu.in/home&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Fri Dec 19 17:42:04 IST 2014&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [link text: Test Transaction]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Test Transaction Link&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [name: amount]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Merchant Drop Down&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for &apos;1&apos; seconds&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Search Merchant Key as &apos; - nevrb6&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for &apos;2&apos; seconds&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get the WebElement with xPath://label/span[contains(text(),&apos; - nevrb6&apos;)]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Merchant&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Amount as &apos;1.50&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the User Credentials as &apos;null:VISA4X5Z&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the PG Code as &apos;DC&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Ibibo Code as &apos;VISA&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;StoreCard&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Store CardName as &apos;testings1YW3QH&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the SavedCard flag field as &apos;1&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;CardDetails&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Name on Card as &apos;Test Card&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Card Number as &apos;5123456789012346&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the CVV as &apos;123&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Expiry month as &apos;05&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Expiry year as &apos;2017&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Submit &apos;Transaction&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for &apos;15&apos; seconds&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [tag name: pre]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Count of Response Parameters&apos; as :-&apos;51&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TestResponse&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select max(id) as mihpayid, merchantid, bank_ref_no as bank_ref_num, field9 as field9 from transaction where txnid = &apos;df6d3c812eeabad20b40&apos;;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select card_token from txn_info where payu_id=&apos;403993715510639642&apos;;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;mihpayid&apos;&apos; as :-&apos;403993715510639642&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;mode&apos;&apos; as :-&apos;DC&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;status&apos;&apos; as :-&apos;failure&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;unmappedstatus&apos;&apos; as :-&apos;failed&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;key&apos;&apos; as :-&apos;nevrb6&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;txnid&apos;&apos; as :-&apos;df6d3c812eeabad20b40&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;amount&apos;&apos; as :-&apos;1.50&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;discount&apos;&apos; as :-&apos;0.00&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;addedon&apos;&apos; as :-&apos;2014-12-18 17:42:13&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;productinfo&apos; as &apos;Product Info&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;firstname&apos; as &apos;Payu-Admin&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;lastname&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;address1&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;address2&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;city&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;state&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;country&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;zipcode&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;email&apos; as &apos;test@example.com&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;phone&apos; as &apos;1234567890&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;udf1&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;udf2&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;udf3&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;udf4&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;udf5&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;udf6&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;udf7&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;udf8&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;udf9&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;udf10&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;hash&apos; as &apos;506bf7e553c160550e3736d2d903419fa91891faa35c9576e6c7229123b612938e5cc35ea25036cb9dae86051aff7e98454aac28f2a6901c458f5888b1fcf9af&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;field1&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;field2&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;field3&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;field4&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;field7&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;field9&apos; as &apos;Payment gateway failed, If your Card was charged, your money will be refunded&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;PG_TYPE&apos;&apos; as :-&apos;SBIPG&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;bank_ref_num&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;bankcode&apos;&apos; as :-&apos;VISA&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;cardToken&apos;&apos; as :-&apos;0ddb8635a6bda7cad8a5e980aa84fe5276b5ed57&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;name_on_card&apos; as &apos;Test Card&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;cardnum&apos;&apos; as :-&apos;512345XXXXXX2346&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;cardhash&apos;&apos; as :-&apos;This field is no longer supported in postback params.&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;net_amount_debit&apos;&apos; as :-&apos;0.00&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;payment_source&apos; as &apos;payu&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/test_response&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-12-18_17-42-38_Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction.png target=&apos;_blank&apos; &gt;2014-12-18_17-42-38_Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction.png&lt;/a&gt;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select count(*) cnt from merchant_payment_type mpt where mpt.merchantid=&apos;5914&apos; and mpt.ibibo_code = &apos;VISA&apos; and mpt.pg_id = &apos;38&apos; and mpt.active=1;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified that payment type VISA with pg_gateway_id 38 is present for merchantid 5914&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select * from paymentgateway pg where pg.key = &apos;SBIPG&apos; and pg.isactive=1;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Navigate to web page- &apos;https://admin.payu.in/home&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Fri Dec 19 17:42:46 IST 2014&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [link text: Test Transaction]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Test Transaction Link&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [name: amount]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Merchant Drop Down&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for &apos;1&apos; seconds&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Search Merchant Key as &apos; - nevrb6&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for &apos;2&apos; seconds&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get the WebElement with xPath://label/span[contains(text(),&apos; - nevrb6&apos;)]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Merchant&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Amount as &apos;1.50&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the User Credentials as &apos;null:VISA4X5Z&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Submit &apos;Transaction&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [xpath: //p[@id=&apos;amountdiv&apos;]/span]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Debit Card Tab&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for &apos;1&apos; seconds&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;StoreCard&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Click Debit Card Dropdown&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for &apos;1&apos; seconds&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Select testings1YW3QH&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the CVV Number as &apos;123&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Pay Now&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for &apos;15&apos; seconds&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [tag name: pre]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Count of Response Parameters&apos; as :-&apos;51&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TestResponse&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select max(id) as mihpayid, merchantid, bank_ref_no as bank_ref_num, field9 as field9 from transaction where txnid = &apos;825b3261625e66453edc&apos;;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select card_token from txn_info where payu_id=&apos;403993715510639660&apos;;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;mihpayid&apos;&apos; as :-&apos;403993715510639660&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;mode&apos;&apos; as :-&apos;DC&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;status&apos;&apos; as :-&apos;failure&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;unmappedstatus&apos;&apos; as :-&apos;failed&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;key&apos;&apos; as :-&apos;nevrb6&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;txnid&apos;&apos; as :-&apos;825b3261625e66453edc&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;amount&apos;&apos; as :-&apos;1.50&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;discount&apos;&apos; as :-&apos;0.00&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;addedon&apos;&apos; as :-&apos;2014-12-18 17:42:52&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;productinfo&apos; as &apos;Product Info&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;firstname&apos; as &apos;Payu-Admin&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;lastname&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;address1&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;address2&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;city&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;state&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;country&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;zipcode&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;email&apos; as &apos;test@example.com&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;phone&apos; as &apos;1234567890&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;udf1&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;udf2&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;udf3&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;udf4&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;udf5&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;udf6&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;udf7&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;udf8&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;udf9&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;udf10&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;hash&apos; as &apos;883d16e058b9e1aac32cc98a0d609648779614a715d9a692b30e693180cd9a9eff3c4a14afa5281af7e51a677742f021964bb48a71e5979cd0683fc002a4b838&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;field1&apos; as &apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;field2&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;field3&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;field4&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;field7&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;field9&apos; as &apos;Payment gateway failed, If your Card was charged, your money will be refunded&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;PG_TYPE&apos;&apos; as :-&apos;SBIPG&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;bank_ref_num&apos;&apos; as :-&apos;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;bankcode&apos;&apos; as :-&apos;VISA&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;cardToken&apos;&apos; as :-&apos;0ddb8635a6bda7cad8a5e980aa84fe5276b5ed57&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;name_on_card&apos; as &apos;Test Card&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;cardnum&apos;&apos; as :-&apos;512345XXXXXX2346&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;cardhash&apos;&apos; as :-&apos;This field is no longer supported in postback params.&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Response Param &apos;net_amount_debit&apos;&apos; as :-&apos;0.00&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Orange&apos;&gt;Skipping the verification of Response Param &apos;payment_source&apos; as &apos;payu&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/test_response&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-12-18_17-43-26_Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction.png target=&apos;_blank&apos; &gt;2014-12-18_17-43-26_Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction.png&lt;/a&gt;&lt;/font&gt;&lt;/br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

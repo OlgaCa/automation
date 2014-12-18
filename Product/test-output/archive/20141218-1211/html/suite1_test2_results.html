@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - TestTransaction NetBanking</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>TestTransaction NetBanking</h1>
+<p>
+  Test duration: 45.709s
+</p>
+
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">Test.AdminPanel.Payments.TestTransactionNB</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Verify net banking transaction through AXISNB gateway">test_NB_AXISNB</span>
+      </td>
+  <td class="duration">
+    45.516s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">Utils.Config@54c562f7</span><br />
+    
+            <div class="testOutput">
+                        &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Navigate to web page- &apos;https://admin.payu.in/home&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestTransactionNB.test_NB_AXISNB&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Fri Dec 19 17:43:36 IST 2014&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [link text: Admin Login]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Admin Login link&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [id: username]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the User name as &apos;qc2&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Password as &apos;Password2&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Submit Button&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [link text: Test Transaction]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Navigate to web page- &apos;https://admin.payu.in/home&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestTransactionNB.test_NB_AXISNB&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Fri Dec 19 17:43:38 IST 2014&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [link text: Test Transaction]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Test Transaction Link&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [name: amount]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select count(*) cnt from merchant_payment_type mpt where mpt.merchantid=&apos;5912&apos; and mpt.ibibo_code = &apos;AXIB&apos; and mpt.pg_id = &apos;23&apos; and mpt.active=1;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified that payment type AXIB with pg_gateway_id 23 is present for merchantid 5912&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select * from paymentgateway pg where pg.key = &apos;AXISNB&apos; and pg.isactive=1;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Merchant Drop Down&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for &apos;1&apos; seconds&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Search Merchant Key as &apos; - YAcQGY&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for &apos;2&apos; seconds&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get the WebElement with xPath://label/span[contains(text(),&apos; - YAcQGY&apos;)]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Merchant&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Enter the Amount as &apos;3.00&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Submit &apos;Transaction&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [xpath: //p[@id=&apos;amountdiv&apos;]/span]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Executing the query - &apos;select * from paymentgateway pg where pg.key = &apos;AXISNB&apos; and pg.isactive=1;&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Connection succeeded&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Net Banking Tab&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [id: netbanking_select]&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Select the Bank Name - AXIS Bank NetBanking dropdown text &apos;AXIS Bank NetBanking&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for &apos;1&apos; seconds&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Click on &apos;Pay Now&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for &apos;10&apos; seconds&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;BankRedirect&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Green&apos;&gt;Verified &apos;Browser URL&apos; as :-&apos;https://www.axisbank.co.in/bankaway/(s(0aewlt45gyolzu55ya3q4h30))/web/l001/retail/jsp/ebpp/retshoppingmallsignon.aspx?requestid=48902762&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for &apos;5&apos; seconds&lt;/font&gt;&lt;/br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

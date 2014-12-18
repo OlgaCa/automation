@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SeamlessStoreCard"
+           tests="3"
+           failures="3"
+           errors="0"
+           skipped="0"
+           time="435.020">
+  <properties />
+            <testcase name="Save_new_store_DCcard" time="143.992" classname="Test.AdminPanel.Payments.TestSeamlessStoreCard">
+                <failure type="org.openqa.selenium.TimeoutException"
+                  message="Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@5feb2b12
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2c72bd8a-2c13-43bf-9388-fde9e29e20e9"
+              >
+<![CDATA[org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@5feb2b12
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ShishirDwivedi', ip: '192.168.1.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2c72bd8a-2c13-43bf-9388-fde9e29e20e9
+  org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+  Utils.Browser.waitForPageLoad(Browser.java:563)
+  PageObject.AdminPanel.Home.AdminPage.<init>(AdminPage.java:26)
+  Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)
+  Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard(TestSeamlessStoreCard.java:37)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+  org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+  java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Admin Login"}
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ShishirDwivedi', ip: '192.168.1.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2c72bd8a-2c13-43bf-9388-fde9e29e20e9
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+  org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+  org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+  org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+  com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+  org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)
+  org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+  Utils.Browser.waitForPageLoad(Browser.java:563)
+  PageObject.AdminPanel.Home.AdminPage.<init>(AdminPage.java:26)
+  Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)
+  Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard(TestSeamlessStoreCard.java:37)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+  org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+  java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Admin Login"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ShishirDwivedi', ip: '192.168.1.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown
+  <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous632558720331228893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641)
+  <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous632558720331228893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="SavedDebitCardTransaction" time="144.199" classname="Test.AdminPanel.Payments.TestSeamlessStoreCard">
+                <failure type="org.openqa.selenium.TimeoutException"
+                  message="Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@2483c9b7
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0d121897-3cd5-4000-bbc1-bcf54b78fc6d"
+              >
+<![CDATA[org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@2483c9b7
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ShishirDwivedi', ip: '192.168.1.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0d121897-3cd5-4000-bbc1-bcf54b78fc6d
+  org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+  Utils.Browser.waitForPageLoad(Browser.java:563)
+  PageObject.AdminPanel.Home.AdminPage.<init>(AdminPage.java:26)
+  Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)
+  Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction(TestSeamlessStoreCard.java:350)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+  org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+  java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Admin Login"}
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ShishirDwivedi', ip: '192.168.1.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0d121897-3cd5-4000-bbc1-bcf54b78fc6d
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+  org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+  org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+  org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+  com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+  org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)
+  org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+  Utils.Browser.waitForPageLoad(Browser.java:563)
+  PageObject.AdminPanel.Home.AdminPage.<init>(AdminPage.java:26)
+  Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)
+  Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction(TestSeamlessStoreCard.java:350)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+  org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+  java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Admin Login"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ShishirDwivedi', ip: '192.168.1.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown
+  <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous3759229522390991861webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641)
+  <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous3759229522390991861webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="testTransactionSavedSeamlessStoredcard" time="146.829" classname="Test.AdminPanel.Payments.TestSeamlessStoreCard">
+                <failure type="org.openqa.selenium.TimeoutException"
+                  message="Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1236f234
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 808d99f7-893c-4a8b-8712-f285d42e1f2e"
+              >
+<![CDATA[org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1236f234
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ShishirDwivedi', ip: '192.168.1.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 808d99f7-893c-4a8b-8712-f285d42e1f2e
+  org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+  Utils.Browser.waitForPageLoad(Browser.java:563)
+  PageObject.AdminPanel.Home.AdminPage.<init>(AdminPage.java:26)
+  Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)
+  Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard(TestSeamlessStoreCard.java:370)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+  org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+  java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Admin Login"}
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ShishirDwivedi', ip: '192.168.1.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 808d99f7-893c-4a8b-8712-f285d42e1f2e
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+  org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+  org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+  org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+  com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+  org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)
+  org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+  Utils.Browser.waitForPageLoad(Browser.java:563)
+  PageObject.AdminPanel.Home.AdminPage.<init>(AdminPage.java:26)
+  Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)
+  Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard(TestSeamlessStoreCard.java:370)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+  org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+  java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Admin Login"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ShishirDwivedi', ip: '192.168.1.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown
+  <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous8478796089914106627webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641)
+  <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous8478796089914106627webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+  
+</testsuite>

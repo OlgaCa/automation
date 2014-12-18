@@ -1,0 +1,148 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 478.267 sec <<< FAILURE!
+SavedDebitCardTransaction(Test.AdminPanel.Payments.TestSeamlessStoreCard)  Time elapsed: 10.547 sec  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ShishirDwivedi', ip: '10.50.6.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at Utils.Browser.navigateToURL(Browser.java:322)
+	at PageObject.AdminPanel.Home.AdminPage.<init>(AdminPage.java:23)
+	at Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)
+	at Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction(TestSeamlessStoreCard.java:350)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 17 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 31 more
+
+Save_new_store_DCcard(Test.AdminPanel.Payments.TestSeamlessStoreCard)  Time elapsed: 4.907 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+	at Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+	at Test.AdminPanel.Payments.TransactionHelper.DoPaymentAndSaveCard(TransactionHelper.java:206)
+	at Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard(TestSeamlessStoreCard.java:46)
+
+testTransactionSavedSeamlessStoredcard(Test.AdminPanel.Payments.TestSeamlessStoreCard)  Time elapsed: 12.683 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+	at Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+	at Test.AdminPanel.Payments.TransactionHelper.DoPaymentAndSaveCard(TransactionHelper.java:206)
+	at Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard(TestSeamlessStoreCard.java:379)
+
+test_CC_RSA(Test.AdminPanel.Payments.TestSeamlessRSA)  Time elapsed: 49.703 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Test.AdminPanel.Payments.TestSeamlessRSA.test_CC_RSA(TestSeamlessRSA.java:41)
+
+test_DC_HDFC2(Test.AdminPanel.Payments.TestTransactionDC)  Time elapsed: 11.234 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+	at Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:788)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:764)
+	at Test.AdminPanel.Payments.TestTransactionDC.test_DC_HDFC2(TestTransactionDC.java:777)
+
+test_IframeCC_HDFC2(Test.AdminPanel.IframePayments.TestIframeTransactionCC)  Time elapsed: 55.5 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Test.AdminPanel.IframePayments.TestIframeTransactionCC.test_IframeCC_HDFC2(TestIframeTransactionCC.java:86)
+
+test_CC_AXIS(Test.AdminPanel.Payments.TestTransactionSeamless)  Time elapsed: 51.777 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Test.AdminPanel.Payments.TestTransactionSeamless.test_CC_AXIS(TestTransactionSeamless.java:303)
+
+test_DC_HDFC2(Test.AdminPanel.Payments.TestTransactionSeamlessDC)  Time elapsed: 6.799 sec  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'ShishirDwivedi', ip: '10.50.6.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at Utils.Browser.navigateToURL(Browser.java:322)
+	at PageObject.AdminPanel.Home.AdminPage.<init>(AdminPage.java:23)
+	at Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)
+	at Test.AdminPanel.Payments.TestTransactionSeamlessDC.test_DC_HDFC2(TestTransactionSeamlessDC.java:103)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 17 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 31 more
+
+test_CC_AXIS(Test.AdminPanel.Payments.TestTransactionCC)  Time elapsed: 55.723 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Test.AdminPanel.Payments.TestTransactionCC.test_CC_AXIS(TestTransactionCC.java:472)
+
+test_VerifyValidOfferPaymentTypeCCAndDC(Test.MerchantPanel.Offers.TestOffers)  Time elapsed: 42.61 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+	at Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:788)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:764)
+	at Test.MerchantPanel.Offers.TestOffers.test_VerifyValidOfferPaymentTypeCCAndDC(TestOffers.java:297)
+

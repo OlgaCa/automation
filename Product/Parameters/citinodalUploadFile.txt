@@ -1,0 +1,7 @@
+mid	name	pay to name	date	payu reference	trasaction amount	pay u charge	service tax	refund & chargeback	settlement amount	commission	transactionType	cardtype
+7913502	tradus.in	SATISH	29-May-12	403993715507949097	1.00	0	0	0	1.00	0	sale	domestic
+												
+												
+												
+												
+												

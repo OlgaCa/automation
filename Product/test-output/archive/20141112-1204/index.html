@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Product_Automation">
+              <span class="suite-name border-failed">Product Automation</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Product_Automation">
+                    <span>C:\PayuAutomation\automation\Product\Product_All_TestSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Product_Automation">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Product_Automation">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Product_Automation">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Product_Automation">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Product_Automation">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Product_Automation">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Product_Automation" class="hide-methods failed suite-Product_Automation"> (hide)</a> <!-- hide-methods failed suite-Product_Automation -->
+                      <a href="#" panel-name="suite-Product_Automation" class="show-methods failed suite-Product_Automation"> (show)</a> <!-- show-methods failed suite-Product_Automation -->
+                    </span>
+                    <div class="method-list-content failed suite-Product_Automation">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Product_Automation" title="Test.AdminPanel.Filters.TestBlackListing" hash-for-method="blackListedPhoneNoGlobal(Utils.Config@2eea88a1)">blackListedPhoneNoGlobal(Utils.Config@2eea88a1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Product_Automation -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Product_Automation" class="panel Product_Automation">
+          <div class="suite-Product_Automation-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Test.AdminPanel.Filters.TestBlackListing</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="blackListedPhoneNoGlobal(Utils.Config@2eea88a1)">
+                  </a> <!-- blackListedPhoneNoGlobal(Utils.Config@2eea88a1) -->
+                  <span class="method-name">blackListedPhoneNoGlobal</span>
+                  <span class="parameters">(Utils.Config@2eea88a1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at Test.AdminPanel.Filters.TestBlackListing.blackListedPhoneNoGlobal(TestBlackListing.java:371)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+( Verify that a phone Number gets blacklisted for global scope)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Product_Automation-class-failed -->
+        </div> <!-- panel Product_Automation -->
+        <div panel-name="test-xml-Product_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\PayuAutomation\automation\Product\Product_All_TestSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;8&quot; verbose=&quot;0&quot; name=&quot;Product Automation&quot;&gt;
+  &lt;test name=&quot;SeamlessStoreCard&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;exclude name=&quot;none&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Test.AdminPanel.Filters.TestBlackListing&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SeamlessStoreCard --&gt;
+&lt;/suite&gt; &lt;!-- Product Automation --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Product_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Product Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SeamlessStoreCard (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Product_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Product Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">1</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">blackListedPhoneNoGlobal</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Product_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Product Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Product_Automation');
+function tableData_Product_Automation() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'blackListedPhoneNoGlobal')
+data.setCell(0, 2, 'Test.AdminPanel.Filters.TestBlackListing')
+data.setCell(0, 3, 88484);
+window.suiteTableData['Product_Automation']= { tableData: data, tableDiv: 'times-div-Product_Automation'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Product_Automation">
+              </div> <!-- times-div-Product_Automation -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Product_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Product Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">blackListedPhoneNoGlobal(Utils.Config@2eea88a1)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><font color='Black'>Wait for '2' seconds</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'PaymentType'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'TransactionDetails'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Navigate to web page- 'https://admin.payu.in/home'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Added the cookie - Name: 'test_name' Value: 'Test.AdminPanel.Filters.TestBlackListing.blackListedPhoneNoGlobal' Domain: '.payu.in' Expiry: 'Thu Nov 13 12:05:18 IST 2014'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Wait for page load by waiting for element [link text: Admin Login]</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Click on 'Admin Login link'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Wait for page load by waiting for element [id: username]</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the User name as 'qc2'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Password as 'Password2'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Click on 'Submit Button'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Wait for page load by waiting for element [link text: Test Transaction]</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Navigate to web page- 'https://admin.payu.in/home'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Added the cookie - Name: 'test_name' Value: 'Test.AdminPanel.Filters.TestBlackListing.blackListedPhoneNoGlobal' Domain: '.payu.in' Expiry: 'Thu Nov 13 12:05:33 IST 2014'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Wait for page load by waiting for element [link text: Test Transaction]</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Click on 'Test Transaction Link'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Wait for page load by waiting for element [name: amount]</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'SQL'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Executing the query - 'SELECT * FROM filter WHERE id=132;'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Connection succeeded</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'TransactionDetails'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Click on 'Merchant Drop Down'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Wait for '1' seconds</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Search Merchant Key as ' - c3l7Yw'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Wait for '2' seconds</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Get the WebElement with xPath://label/span[contains(text(),' - c3l7Yw')]</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Click on 'Merchant'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Amount as '10.00'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Phone as '9000000001'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Submit 'Transaction'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Wait for page load by waiting for element [xpath: //p[@id='amountdiv']/span]</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Click on 'Credit Card Tab'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Wait for page load by waiting for element [id: cname_on_card]</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'CardDetails'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Name on Card as 'Test Card'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '5'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '1'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '2'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '3'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '4'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '5'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '6'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '7'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '8'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '9'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '0'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '1'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '2'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '3'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '4'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the Card Number as '6'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Enter the CVV as '123'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Select the Expiry month dropdown value '05'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Select the Expiry year dropdown value '2017'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Click on 'Pay Now'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Wait for '15' seconds</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Wait for page load by waiting for element [tag name: pre]</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'TransactionDetails'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'PaymentType'</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Count of Response Parameters' as :-'50'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'TestResponse'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'SQL'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Executing the query - 'select max(id) as mihpayid, merchantid, bank_ref_no as bank_ref_num, field9 as field9 from transaction where txnid = '0a5808ecc8833accd289';'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Connection succeeded</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'SQL'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Executing the query - 'select card_token from txn_info where payu_id='403993715510387046';'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Connection succeeded</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'amount'' as :-'10.00'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'PGInfo'</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'mode'' as :-'CC'</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'phone'' as :-'9000000001'</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'productinfo' as 'Product Info'</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'discount' as '0.00'</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'addedon'' as :-'2014-11-12 12:05:56'</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'unmappedstatus'' as :-'failed'</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'mihpayid'' as :-'403993715510387046'</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'address2' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'address1' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'city' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'key'' as :-'c3l7Yw'</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'bank_ref_num'' as :-''</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'txnid'' as :-'0a5808ecc8833accd289'</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'email' as 'test@example.com'</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'bankcode'' as :-'CC'</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'error'' as :-'E307'</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'error_Message'' as :-'Bank denied transaction due to risk'</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'udf1' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'udf2' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'udf3' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'udf4' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'udf5' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'udf6'' as :-''</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'udf7'' as :-''</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'udf8'' as :-''</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'udf9'' as :-''</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'udf10'' as :-''</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'status'' as :-'failure'</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'cardhash'' as :-'This field is no longer supported in postback params.'</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'cardnum' as '512345XXXXXX2346'</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'lastname' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'field1' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'field2' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'field3' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'field4' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'field5' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'field6' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'field7' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'field8' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'field9' as 'Transaction denied due to blacklisted parameters.'</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'country' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'hash' as '10735b93d17c68360e2ec3604ca0a0cbee488d2860e7c7977cc58d9de1a99e52f5d38a4b330a50e6cd1a09f6083754300b19749092d8743dfdfbbc5170c94aa2'</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'firstname' as 'Payu-Admin'</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'zipcode' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'state' as ''</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'name_on_card' as 'Test Card'</font></br></span>
+                <span class="reporter-method-output"><font color='Green'>Verified 'Response Param 'net_amount_debit'' as :-'0.00'</font></br></span>
+                <span class="reporter-method-output"><font color='Orange'>Skipping the verification of Response Param 'payment_source' as 'payu'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'><B>Page URL</B>:- https://admin.payu.in/test_response</font></br></span>
+                <span class="reporter-method-output"><font color='Black'><B>Screenshot</B>:- <a href=html/2014-11-12_12-06-32_Test.AdminPanel.Filters.TestBlackListing.blackListedPhoneNoGlobal.png target='_blank' >2014-11-12_12-06-32_Test.AdminPanel.Filters.TestBlackListing.blackListedPhoneNoGlobal.png</a></font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'SQL'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Executing the query - 'SELECT * FROM filterLog WHERE txnid='403993715510387046';'</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu</font></br></span>
+                <span class="reporter-method-output"><font color='Black'>Connection succeeded</font></br></span>
+                <span class="reporter-method-output">Filter Rule was Executed and an entry has been created in the DB</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Product_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">10 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Test.AdminPanel.Filters.TestBlackListing</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">blackListedCardNumberOnMerchant</span>
+                <br/>
+                <span class="ignored-method-name">blackListedCardGlobally</span>
+                <br/>
+                <span class="ignored-method-name">errorMessageOnSettingSameRule</span>
+                <br/>
+                <span class="ignored-method-name">blackListedPhoneNoOnCategory</span>
+                <br/>
+                <span class="ignored-method-name">blackListedEmailOnCategory</span>
+                <br/>
+                <span class="ignored-method-name">addAndRemoveBlackListingForMerchantScope</span>
+                <br/>
+                <span class="ignored-method-name">blackListedEmailGlobal</span>
+                <br/>
+                <span class="ignored-method-name">blackListedPhoneNoOnMerchant</span>
+                <br/>
+                <span class="ignored-method-name">blackListedEmailOnMerchant</span>
+                <br/>
+                <span class="ignored-method-name">blackListedCardNumberOnCategory</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Product_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.AdminPanel.Filters.TestBlackListing</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">InitializeParameters(null, null, null)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">6794 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">blackListedPhoneNoGlobal(Utils.Config@2eea88a1)</span>
+                <span class="method-start">6794 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=blackListedPhoneNoGlobal status=FAILURE method=TestBlackListing.blackListedPhoneNoG...)</span>
+                <span class="method-start">95279 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

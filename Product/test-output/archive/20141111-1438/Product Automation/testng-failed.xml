@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" verbose="0" name="Failed suite [Product Automation]">
+  <test name="SeamlessStoreCard(failed)">
+    <groups>
+      <run>
+        <exclude name="none"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Test.AdminPanel.Filters.TestBlackListing">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="blackListedPhoneNoGlobal" invocation-numbers="0"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Filters.TestBlackListing -->
+    </classes>
+  </test> <!-- SeamlessStoreCard(failed) -->
+</suite> <!-- Failed suite [Product Automation] -->

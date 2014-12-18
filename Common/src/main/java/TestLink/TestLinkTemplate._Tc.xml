@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="">
+    <details><![CDATA[]]></details>
+    <testsuite name="Suite1">
+        <details><![CDATA[Details1]]></details>
+    <testcase name="SwitchDashboardTestCase">
+    <node_order><![CDATA[1]]></node_order>
+    <summary><![CDATA[Summary1]]></summary>
+    <steps><step><step_number><![CDATA[1]]></step_number><actions><![CDATA[Step1: First Step of the test case
+]]></actions>
+    <expectedresults><![CDATA[Results1]]></expectedresults></step></steps>
+    <execution_type><![CDATA[2]]></execution_type>
+            <custom_fields>
+                <custom_field>
+                    <name>JavaTestClass</name>
+                    <value>Test.Merchant.TestDashboardSwitch</value>
+                </custom_field>
+                <custom_field>
+                    <name>Interfering1</name>
+                    <value>TRUE</value>
+                </custom_field>
+                <custom_field>
+                    <name>Browser</name>
+                    <value>Firefox</value>
+                </custom_field>
+                <custom_field>
+                    <name>Automation_Status</name>
+                    <value>Ready To Run</value>
+                </custom_field>
+                <custom_field>
+                    <name>How_Found</name>
+                    <value>Test Design</value>
+                </custom_field>
+                <custom_field>
+                    <name>Groups</name>
+                    <value>BVT|FVT</value>
+                </custom_field>
+                <custom_field>
+                    <name>AutomatedBy</name>
+                    <value>Vidya</value>
+                </custom_field>
+                <custom_field>
+                    <name>JavaTestMethod</name>
+                    <value>testSwitchDashboard</value>
+                </custom_field>
+            </custom_fields>
+        </testcase>
+    <testcase name="CustomerProfileTestCase">
+    <node_order><![CDATA[2]]></node_order>
+    <summary><![CDATA[Summary2]]></summary>
+    <steps><step><step_number><![CDATA[2]]></step_number><actions><![CDATA[Steps2]]></actions>
+    <expectedresults><![CDATA[Results2]]></expectedresults></step></steps>
+    <execution_type><![CDATA[1]]></execution_type>
+            <custom_fields>
+                <custom_field>
+                    <name>JavaTestClass</name>
+                    <value>Test.Customer.TestCustomerProfile</value>
+                </custom_field>
+                <custom_field>
+                    <name>Interfering1</name>
+                    <value>TRUE</value>
+                </custom_field>
+                <custom_field>
+                    <name>Browser</name>
+                    <value>Firefox</value>
+                </custom_field>
+                <custom_field>
+                    <name>Automation_Status</name>
+                    <value>Ready To Run</value>
+                </custom_field>
+                <custom_field>
+                    <name>How_Found</name>
+                    <value>Test Design</value>
+                </custom_field>
+                <custom_field>
+                    <name>Groups</name>
+                    <value>BVT|FVT</value>
+                </custom_field>
+                <custom_field>
+                    <name>AutomatedBy</name>
+                    <value>Sonia</value>
+                </custom_field>
+                <custom_field>
+                    <name>JavaTestMethod</name>
+                    <value>test_Customer_contact_details</value>
+                </custom_field>
+            </custom_fields>
+        </testcase>
+    </testsuite>
+</testsuite>

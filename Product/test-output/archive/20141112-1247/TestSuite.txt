@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 74.682 sec <<< FAILURE!
+blackListedPhoneNoGlobal(Test.AdminPanel.Filters.TestBlackListing)  Time elapsed: 60.488 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Test.AdminPanel.Filters.TestBlackListing.blackListedPhoneNoGlobal(TestBlackListing.java:371)
+

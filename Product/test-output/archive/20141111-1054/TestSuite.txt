@@ -1,0 +1,74 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 668.064 sec <<< FAILURE!
+Save_new_store_DCcard(Test.AdminPanel.Payments.TestSeamlessStoreCard)  Time elapsed: 52.069 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+	at Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+	at Test.AdminPanel.Payments.TransactionHelper.DoPaymentAndSaveCard(TransactionHelper.java:206)
+	at Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard(TestSeamlessStoreCard.java:46)
+
+testTransactionSavedSeamlessStoredcard(Test.AdminPanel.Payments.TestSeamlessStoreCard)  Time elapsed: 52.078 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+	at Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+	at Test.AdminPanel.Payments.TransactionHelper.DoPaymentAndSaveCard(TransactionHelper.java:206)
+	at Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard(TestSeamlessStoreCard.java:379)
+
+test_CC_RSA(Test.AdminPanel.Payments.TestSeamlessRSA)  Time elapsed: 60.562 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Test.AdminPanel.Payments.TestSeamlessRSA.test_CC_RSA(TestSeamlessRSA.java:41)
+
+test_DC_HDFC2(Test.AdminPanel.Payments.TestTransactionDC)  Time elapsed: 7.639 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+	at Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:788)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:764)
+	at Test.AdminPanel.Payments.TestTransactionDC.test_DC_HDFC2(TestTransactionDC.java:777)
+
+test_IframeCC_HDFC2(Test.AdminPanel.IframePayments.TestIframeTransactionCC)  Time elapsed: 42.092 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Test.AdminPanel.IframePayments.TestIframeTransactionCC.test_IframeCC_HDFC2(TestIframeTransactionCC.java:86)
+
+test_CC_AXIS(Test.AdminPanel.Payments.TestTransactionSeamless)  Time elapsed: 60.619 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Test.AdminPanel.Payments.TestTransactionSeamless.test_CC_AXIS(TestTransactionSeamless.java:303)
+
+test_DC_HDFC2(Test.AdminPanel.Payments.TestTransactionSeamlessDC)  Time elapsed: 11.482 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+	at Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:788)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:764)
+	at Test.AdminPanel.Payments.TestTransactionSeamlessDC.test_DC_HDFC2(TestTransactionSeamlessDC.java:110)
+
+test_CC_AXIS(Test.AdminPanel.Payments.TestTransactionCC)  Time elapsed: 62.724 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Test.AdminPanel.Payments.TestTransactionCC.test_CC_AXIS(TestTransactionCC.java:472)
+
+test_VerifyValidOfferPaymentTypeCCAndDC(Test.MerchantPanel.Offers.TestOffers)  Time elapsed: 29.765 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+	at Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:788)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:764)
+	at Test.MerchantPanel.Offers.TestOffers.test_VerifyValidOfferPaymentTypeCCAndDC(TestOffers.java:297)
+

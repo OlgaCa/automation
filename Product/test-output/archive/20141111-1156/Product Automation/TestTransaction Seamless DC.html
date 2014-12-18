@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>TestNG:  TestTransaction Seamless DC</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestTransaction Seamless DC</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 11 12:06:16 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>16 seconds (16513 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td>none </td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.AdminPanel.Payments.TestTransactionSeamlessDC.test_DC_HDFC2()'><b>test_DC_HDFC2</b><br>Test class: Test.AdminPanel.Payments.TestTransactionSeamlessDC<br>Test method: Verify seamless debit card transaction through HDFC2 gateway<br>Parameters: Utils.Config@72d818d1<br/>
+<a href="#Output-51670489" onClick='toggleBox("Output-51670489", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-51670489" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-51670489">
+<font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'PaymentType'</font></br><br/>
+<font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'TransactionDetails'</font></br><br/>
+<font color='Black'>Navigate to web page- 'https://admin.payu.in/home'</font></br><br/>
+<font color='Black'>Added the cookie - Name: 'test_name' Value: 'Test.AdminPanel.Payments.TestTransactionSeamlessDC.test_DC_HDFC2' Domain: '.payu.in' Expiry: 'Wed Nov 12 12:06:25 IST 2014'</font></br><br/>
+<font color='Black'>Wait for page load by waiting for element [link text: Admin Login]</font></br><br/>
+<font color='Black'>Click on 'Admin Login link'</font></br><br/>
+<font color='Black'>Wait for page load by waiting for element [id: username]</font></br><br/>
+<font color='Black'>Enter the User name as 'qc2'</font></br><br/>
+<font color='Black'>Enter the Password as 'Password2'</font></br><br/>
+<font color='Black'>Click on 'Submit Button'</font></br><br/>
+<font color='Black'>Wait for page load by waiting for element [link text: Test Transaction]</font></br><br/>
+<font color='Black'>Navigate to web page- 'https://admin.payu.in/home'</font></br><br/>
+<font color='Black'>Added the cookie - Name: 'test_name' Value: 'Test.AdminPanel.Payments.TestTransactionSeamlessDC.test_DC_HDFC2' Domain: '.payu.in' Expiry: 'Wed Nov 12 12:06:28 IST 2014'</font></br><br/>
+<font color='Black'>Wait for page load by waiting for element [link text: Test Transaction]</font></br><br/>
+<font color='Black'>Click on 'Test Transaction Link'</font></br><br/>
+<font color='Black'>Wait for page load by waiting for element [name: amount]</font></br><br/>
+<font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'PGInfo'</font></br><br/>
+<font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'SQL'</font></br><br/>
+<font color='Black'>Executing the query - 'select count(*) cnt from merchant_payment_type mpt where mpt.merchantid='5912' and mpt.ibibo_code = 'MAST' and mpt.pg_id = '' and mpt.active=1;'</font></br><br/>
+<font color='Black'>Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu</font></br><br/>
+<font color='Black'>Connection succeeded</font></br><br/>
+<font color='Black'><B>Page URL</B>:- https://admin.payu.in/testpay</font></br><br/>
+<font color='Black'><B>Screenshot</B>:- <a href=html/2014-11-11_12-06-29_Test.AdminPanel.Payments.TestTransactionSeamlessDC.test_DC_HDFC2.png target='_blank' >2014-11-11_12-06-29_Test.AdminPanel.Payments.TestTransactionSeamlessDC.test_DC_HDFC2.png</a></font></br><br/>
+<font color='Red'>Payment type MAST with pg_gateway_id  is NOT present for merchantid 5912</font></br><br/>
+<font color='Black'>Get TestData Excel:-'ProductTestData.xls', Sheet:- 'SQL'</font></br><br/>
+<font color='Black'>Executing the query - 'select * from paymentgateway pg where pg.key = 'HDFCPG' and pg.isactive=1;'</font></br><br/>
+<font color='Black'>Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu</font></br><br/>
+<font color='Black'>Connection succeeded</font></br><br/>
+<font color='Orange'>No data was returned for this query</font></br><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+	at Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:788)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:764)
+	at Test.AdminPanel.Payments.TestTransactionSeamlessDC.test_DC_HDFC2(TestTransactionSeamlessDC.java:110)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace51670489", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace51670489'><pre>java.lang.NullPointerException
+	at Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+	at Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:788)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:764)
+	at Test.AdminPanel.Payments.TestTransactionSeamlessDC.test_DC_HDFC2(TestTransactionSeamlessDC.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>11</td>
+<td>Test.AdminPanel.Payments.TestTransactionSeamlessDC@3ffc5af1</td></tr>
+</table><p>
+</body>
+</html>

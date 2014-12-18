@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - SeamlessStoreCard</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>SeamlessStoreCard</h1>
+<p>
+  Test duration: 436.979s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">Test.AdminPanel.Payments.TestSeamlessStoreCard</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Save a new Store Card">Save_new_store_DCcard</span>
+      </td>
+  <td class="duration">
+    143.992s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">Utils.Config@10db82ae</span><br />
+    
+            <div class="testOutput">
+                        &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Navigate to web page- &apos;https://admin.payu.in/home&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:08:31 IST 2014&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [oxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@5feb2b12&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/home&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-10-32_Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard.png target=&apos;_blank&apos; &gt;2014-11-15_19-10-32_Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard.png&lt;/a&gt;&lt;/font&gt;&lt;/br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@5feb2b12<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 2c72bd8a-2c13-43bf-9388-fde9e29e20e9</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)<br />
+              Utils.Browser.waitForPageLoad(Browser.java:563)<br />
+              PageObject.AdminPanel.Home.AdminPage.&lt;init&gt;(AdminPage.java:26)<br />
+              Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)<br />
+              Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard(TestSeamlessStoreCard.java:37)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)<br />
+              org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)<br />
+              java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Admin Login&quot;}<br/>
+Command duration or timeout: 30.07 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 2c72bd8a-2c13-43bf-9388-fde9e29e20e9</a><br />
+        <div class="stackTrace" id="exception-1">
+                      sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+                      sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+                      java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br />
+                      org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+                      org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+                      com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
+                      Utils.Browser.waitForPageLoad(Browser.java:563)<br />
+                      PageObject.AdminPanel.Home.AdminPage.&lt;init&gt;(AdminPage.java:26)<br />
+                      Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)<br />
+                      Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard(TestSeamlessStoreCard.java:37)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:483)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+                      org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)<br />
+                      org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)<br />
+                      java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)<br />
+                      java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+                      java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+                      java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+                      java.lang.Thread.run(Thread.java:745)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Admin Login&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-2">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous632558720331228893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641)<br />
+                      &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous632558720331228893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Use Saved Card">SavedDebitCardTransaction</span>
+      </td>
+  <td class="duration">
+    144.199s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">Utils.Config@1d082e88</span><br />
+    
+            <div class="testOutput">
+                        &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Navigate to web page- &apos;https://admin.payu.in/home&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:08:14 IST 2014&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [oxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@2483c9b7&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/home&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-10-15_Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction.png target=&apos;_blank&apos; &gt;2014-11-15_19-10-15_Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction.png&lt;/a&gt;&lt;/font&gt;&lt;/br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@2483c9b7<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 0d121897-3cd5-4000-bbc1-bcf54b78fc6d</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)<br />
+              Utils.Browser.waitForPageLoad(Browser.java:563)<br />
+              PageObject.AdminPanel.Home.AdminPage.&lt;init&gt;(AdminPage.java:26)<br />
+              Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)<br />
+              Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction(TestSeamlessStoreCard.java:350)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)<br />
+              org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)<br />
+              java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Admin Login&quot;}<br/>
+Command duration or timeout: 30.07 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 0d121897-3cd5-4000-bbc1-bcf54b78fc6d</a><br />
+        <div class="stackTrace" id="exception-4">
+                      sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+                      sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+                      java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br />
+                      org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+                      org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+                      com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
+                      Utils.Browser.waitForPageLoad(Browser.java:563)<br />
+                      PageObject.AdminPanel.Home.AdminPage.&lt;init&gt;(AdminPage.java:26)<br />
+                      Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)<br />
+                      Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction(TestSeamlessStoreCard.java:350)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:483)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+                      org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)<br />
+                      org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)<br />
+                      java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)<br />
+                      java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+                      java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+                      java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+                      java.lang.Thread.run(Thread.java:745)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Admin Login&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-5">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous3759229522390991861webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641)<br />
+                      &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous3759229522390991861webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="save and do transaction using saved Card in seamless flow">testTransactionSavedSeamlessStoredcard</span>
+      </td>
+  <td class="duration">
+    146.829s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">Utils.Config@60704c</span><br />
+    
+            <div class="testOutput">
+                        &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Navigate to web page- &apos;https://admin.payu.in/home&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:07:54 IST 2014&apos;&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;Wait for page load by waiting for element [oxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1236f234&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/home&lt;/font&gt;&lt;/br&gt;<br />
+                                &lt;font color=&apos;Black&apos;&gt;&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-09-55_Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard.png target=&apos;_blank&apos; &gt;2014-11-15_19-09-55_Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard.png&lt;/a&gt;&lt;/font&gt;&lt;/br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1236f234<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 808d99f7-893c-4a8b-8712-f285d42e1f2e</b></a><br />
+    <div class="stackTrace" id="exception-6">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)<br />
+              Utils.Browser.waitForPageLoad(Browser.java:563)<br />
+              PageObject.AdminPanel.Home.AdminPage.&lt;init&gt;(AdminPage.java:26)<br />
+              Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)<br />
+              Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard(TestSeamlessStoreCard.java:370)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)<br />
+              org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)<br />
+              java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-7', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Admin Login&quot;}<br/>
+Command duration or timeout: 30.07 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 808d99f7-893c-4a8b-8712-f285d42e1f2e</a><br />
+        <div class="stackTrace" id="exception-7">
+                      sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+                      sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+                      java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br />
+                      org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)<br />
+                      org.openqa.selenium.By$ByLinkText.findElement(By.java:242)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+                      com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
+                      Utils.Browser.waitForPageLoad(Browser.java:563)<br />
+                      PageObject.AdminPanel.Home.AdminPage.&lt;init&gt;(AdminPage.java:26)<br />
+                      Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)<br />
+                      Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard(TestSeamlessStoreCard.java:370)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:483)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+                      org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)<br />
+                      org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)<br />
+                      java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)<br />
+                      java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+                      java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+                      java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+                      java.lang.Thread.run(Thread.java:745)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-8', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Admin Login&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-8">
+                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous8478796089914106627webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641)<br />
+                      &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous8478796089914106627webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+      </table>
+
+
+  
+</body>
+</html>

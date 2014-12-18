@@ -1,0 +1,69 @@
+Steps
+Download wamp server
+1. Install Testlink using notes
+Change Apache to listen on port 81 by changing file C:\wamp\bin\apache\Apache2.4.4\conf\httpd.conf
+2. Install jenkins and run in port 82. using steps:
+cd into C:\Program Files\Jenkins and type command java -jar jenkins.war httpsPort=8082
+
+3. In testlink create a project with API checkbox enabled Enable Test Automation (API keys)
+Get developer key from My Settings -> Click generate a new key under Personal API access key. Copy the key and paste it in Common\TestLink\ParseResultsXmlAndUploadToTL as variable value DEV_KEY
+In the same file set SERVER_URL as "http://localhost:81/testlink-1.9.9/lib/api/xmlrpc/v1/xmlrpc.php";
+
+4. Install TestLink plugin in Jenkins by going to Jenkins -> Manage Plugins -> Search for TestLink in Available plugins
+5. Install Git plugin in Jenkins by going to Jenkins -> Manage Plugins -> Search for Git in Available plugins
+6. Go to Manage Jenkins -> Configure System -> Choose location of ant director and git executable
+7. Copy config.xml file to jobs folder in jenkins found in Users/username directory. Go to Manage Jenkins ->Reload Configuration from disk
+8. If git clone does not happen download git-client 1.4.6 and place it in jenkins/plugins folder
+try git plugin 2.0.1 and place it in jenkins/plugins folder
+try org.eclipse.jgit-3.2.0.201312181205-r.jar file and place it in C:\Users\vidya.priyadarshini\.hudson\plugins\git-client\WEB-INF\lib folder
+refer http://stackoverflow.com/questions/21735978/jenkins-git-fetch-fails-with-unknown-option-progress
+try emptying workspace folder
+try using git client plugin version 1.0.7 and git plugin version1.4.0
+9. Set execution type of testcases in testlink as automated.
+10. Refer http://javarevisited.blogspot.in/2011/01/how-classpath-work-in-java.html for classpath errors
+11. Invoke jenkins: java -jar jenkins.war --httpPort=8082
+
+12. To include more than 1000 testcases in testplan include below in PHP.ini file
+max_input_vars=6000
+
+REDMINE Integration
+1. In Issue tracker management add below template to redmine 
+<issuetracker> 
+<apikey>eef6b3357b67c3752e27f8bfc2f7f0732d0cc13a</apikey> 
+<uribase>http://redmine.ibibo.com</uribase>
+<uriview>http://redmine.ibibo.com/issues/</uriview> 
+<projectidentifier>payu</projectidentifier> 
+</issuetracker>
+
+2. Assign Issue Tracker to Project from Test Project Management
+
+
+To run test cases use
+C:\Users\vidya.priyadarshini\.jenkins\jobs\RunTestLink\workspace\code\Common>jav
+a -cp ..\lib\*;..\lib\PayULibs\*;..\Paisa\bin\TestLink; TestLink.GetTestCasesToR
+un RunTestLink jenkins-RunTestLink-14 Test.Customer.TestCustomerProfile test_Cus
+tomer_contact_details 3
+
+3. planEdit.php comment out the Do_delete switch case
+or 
+
+C:\Users\vidya.priyadarshini\.jenkins\jobs\RunTestLink\workspace\code\Paisa>java
+ -cp ..\lib\*;..\lib\PayULibs\*;bin; TestLink.GetTestCasesToRun RunTestLink jenk
+ins-RunTestLink-14 Test.Customer.TestCustomerProfile test_Customer_contact_detai
+ls 3
+Second option is preferrable
+
+cd code\%ProjectName%
+
+java -cp ..\lib\*;bin; Utils.GenerateTestNGXmlAndRun %JOB_NAME% %BUILD_TAG% %ProjectName% %environment% %browser% %isParallel%
+
+
+
+cd code\%ProjectName%
+
+java -cp ..\lib\*;bin; Utils.ParseResultsXmlAndUploadToTL %JOB_NAME% %BUILD_TAG% %ProjectName% %TestPlan% %BuildName%
+
+
+
+cd code\Common
+ant -buildfile buildtestlink.xml sendmail1 -DProject=%ProjectName% -DtoEmail=%toEmail% -DTimeStamp=%BUILD_TAG% -Denvironment=%environment%

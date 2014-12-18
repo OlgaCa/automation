@@ -1,0 +1,26 @@
+TestLink Customization Instructions
+
+1. Create a new project named TestProject.Check all enhanced features.Check Active and Public in Availabity.
+
+2. Choose Desktop. Click Define Custom Fields.
+
+3. Create custom fields as shown in screenshot(refer value of type setting from attached screenshot)
+		Custom Field Name/label		Type 					Possible Values
+	3.1 AutomatedBy - 				List					(<Names of all QC team members>). Note: Use | symbol between names
+	3.2 Automation_Status - 		Multiselection List		No-Manual|Not Started|Broken|Ready To Run|Under Development
+	3.3 Browser 		- 			Multiselection List		Any|IE|Chrome|Firefox|Opera
+	3.4 Groups			- 			Multiselection List     BVT|FVT|Performance|Security
+	3.5 How_Found		- 			Multiselection List     Test Design|Bug|Code Review|Client Feedback|Peer Review
+	3.6 Interfering     - 			Checkbox 				Yes
+	3.7 JavaTestClass   - 			String 					N/A
+	3.8 JavaTestMethod  - 			String 					N/A
+	
+4. Click assign custom fields and assign all the above custom fields. 
+	
+5. Create a test plan with any name without any space character. (Click Desktop, click test plan management, Click create, Check active and public checkboxes). Note: Do not have space in test plan name.
+
+6. Click test specification and upload test cases by importing tc.xml file(xml file generated from excel macro)
+
+7. Click desktop, Click add or remove test cases. Check/select desired test cases to add them to the test plan
+	
+	

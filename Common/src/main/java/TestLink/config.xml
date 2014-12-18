@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>TestLinkTestPlan</name>
+          <description>Name of testlink testplan</description>
+          <defaultValue>TestPlan1</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>TestLinkBuildName</name>
+          <description>Name of testlink build name</description>
+          <defaultValue>test_build</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>ProjectName</name>
+          <description>Name of project, Paisa or Product</description>
+          <defaultValue>Product</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>environment</name>
+          <description>Environment in which test cases should be run. eg. PPRelease or Staging</description>
+          <defaultValue>PPRelease</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>browser</name>
+          <description>Browser in which test cases should be run. eg. Firefox,Chrome</description>
+          <defaultValue>Firefox</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>isParallel</name>
+          <description>Specify true to run test cases in parallel mode. Specify false to run test cases in serial mode</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>ToEmail</name>
+          <description>Enter email addresses to which results email needs to be sent.</description>
+          <defaultValue>qc-payu@payu.in</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>TestLinkProjectName</name>
+          <description>Name of test link project name</description>
+          <defaultValue>TestProduct</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>isFullSuiteRun</name>
+          <description>Specifies whether we have to include methods in generated testng xml or not.</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@1.4.0">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <name></name>
+        <refspec></refspec>
+        <url>http://autouser:mih%40123@gitlab.payu.in/payu/automation.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>origin/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <disableSubmodules>false</disableSubmodules>
+    <recursiveSubmodules>false</recursiveSubmodules>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <authorOrCommitter>false</authorOrCommitter>
+    <clean>false</clean>
+    <wipeOutWorkspace>false</wipeOutWorkspace>
+    <pruneBranches>false</pruneBranches>
+    <remotePoll>false</remotePoll>
+    <ignoreNotifyCommit>false</ignoreNotifyCommit>
+    <useShallowClone>false</useShallowClone>
+    <buildChooser class="hudson.plugins.git.util.DefaultBuildChooser"/>
+    <gitTool>git</gitTool>
+    <submoduleCfg class="list"/>
+    <relativeTargetDir></relativeTargetDir>
+    <reference></reference>
+    <excludedRegions></excludedRegions>
+    <excludedUsers></excludedUsers>
+    <gitConfigName></gitConfigName>
+    <gitConfigEmail></gitConfigEmail>
+    <skipTag>false</skipTag>
+    <includedRegions></includedRegions>
+    <scmName></scmName>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.testlink.TestLinkBuilder plugin="testlink@3.10">
+      <testLinkName>testlink1.9.9</testLinkName>
+      <testProjectName>$TestLinkProjectName</testProjectName>
+      <testPlanName>$TestLinkTestPlan</testPlanName>
+      <buildName>$TestLinkBuildName</buildName>
+      <platformName></platformName>
+      <customFields>JavaTestClass,JavaTestMethod</customFields>
+      <singleBuildSteps>
+        <hudson.tasks.BatchFile>
+          <command>cd Common
+ant -buildfile buildtestlink.xml -DProject=%ProjectName% -DTimeStamp=%BUILD_TAG%</command>
+        </hudson.tasks.BatchFile>
+      </singleBuildSteps>
+      <beforeIteratingAllTestCasesBuildSteps>
+        <hudson.tasks.BatchFile>
+          <command>cd Common
+javac -cp ..\lib\*;..\lib\PayULibs\*; TestLink\GetTestCasesToRun.java
+
+javac -cp ..\lib\*;..\lib\PayULibs\*; TestLink\GenerateTestNGXmlAndRun.java
+
+javac -cp ..\lib\*;..\lib\PayULibs\*; TestLink\ParseResultsXmlAndUploadToTL.java</command>
+        </hudson.tasks.BatchFile>
+      </beforeIteratingAllTestCasesBuildSteps>
+      <iterativeBuildSteps>
+        <hudson.tasks.BatchFile>
+          <command>cd %ProjectName%
+java -cp ..\lib\*;..\lib\PayULibs\*;bin; TestLink.GetTestCasesToRun %JOB_NAME% %BUILD_TAG% %TESTLINK_TESTCASE_JavaTestClass% %TESTLINK_TESTCASE_JavaTestMethod% %TESTLINK_TESTCASE_ID%</command>
+        </hudson.tasks.BatchFile>
+      </iterativeBuildSteps>
+      <afterIteratingAllTestCasesBuildSteps>
+        <hudson.tasks.BatchFile>
+          <command>cd %ProjectName%
+java -cp ..\lib\*;..\lib\PayULibs\*;bin; TestLink.GenerateTestNGXmlAndRun %JOB_NAME% %BUILD_TAG% %ProjectName% %environment% %browser% %isParallel% %isFullSuiteRun%</command>
+        </hudson.tasks.BatchFile>
+        <hudson.tasks.BatchFile>
+          <command>cd %ProjectName%
+java -cp ..\lib\*;..\lib\PayULibs\*;bin; TestLink.ParseResultsXmlAndUploadToTL %JOB_NAME% %BUILD_TAG% %ProjectName% %TestLinkTestPlan% %TestLinkBuildName% %TestLinkProjectName%
+</command>
+        </hudson.tasks.BatchFile>
+      </afterIteratingAllTestCasesBuildSteps>
+      <transactional>false</transactional>
+      <failedTestsMarkBuildAsFailure>false</failedTestsMarkBuildAsFailure>
+      <failIfNoResults>false</failIfNoResults>
+      <failOnNotRun>false</failOnNotRun>
+      <executionOrderComparator/>
+      <failure>false</failure>
+    </hudson.plugins.testlink.TestLinkBuilder>
+    <hudson.tasks.BatchFile>
+      <command>cd %ProjectName%
+ant -buildfile ..\Common\buildtestlink.xml sendmail1 -DProject=%ProjectName% -Denvironment=%environment% -DTimeStamp=%BUILD_TAG% -DtoEmail=%ToEmail%</command>
+    </hudson.tasks.BatchFile>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

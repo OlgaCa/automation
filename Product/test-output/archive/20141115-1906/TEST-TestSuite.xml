@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="12" failures="10" name="TestSuite" time="721.465" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_11\jre\bin"/>
+    <property name="java.vm.version" value="25.11-b03"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\PayuAutomation\automation\Product"/>
+    <property name="java.runtime.version" value="1.8.0_11-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="C:\PayuAutomation\automation\Product"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_11\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="surefire.real.class.path" value="C:\Users\SHISHI~1.DWI\AppData\Local\Temp\surefirebooter8713582716217976865.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\SHISHI~1.DWI\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_11\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_11\bin;D:\Software\Groovy\groovy-2.4.0-beta-3;D:\Software\Apache Maven\apache-maven-3.2.3\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_11\bin;D:\Software\Groovy\groovy-2.4.0-beta-3;D:\Software\Apache Maven\apache-maven-3.2.3\bin;C:\Program Files\Java\jdk1.8.0_11\bin;%M@_HOME%\bin;."/>
+    <property name="surefire.test.class.path" value="C:\PayuAutomation\automation\Product\target\test-classes;C:\PayuAutomation\automation\Product\target\classes;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-java\2.44.0\selenium-java-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.44.0\selenium-chrome-driver-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.44.0\selenium-remote-driver-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-api\2.44.0\selenium-api-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.44.0\selenium-htmlunit-driver-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.15\htmlunit-2.15.jar;C:\Users\shishir.dwivedi\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar;C:\Users\shishir.dwivedi\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\httpcomponents\httpmime\4.3.3\httpmime-4.3.3.jar;C:\Users\shishir.dwivedi\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.15\htmlunit-core-js-2.15.jar;C:\Users\shishir.dwivedi\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\shishir.dwivedi\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.21\nekohtml-1.9.21.jar;C:\Users\shishir.dwivedi\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.14\cssparser-0.9.14.jar;C:\Users\shishir.dwivedi\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\shishir.dwivedi\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.15.v20140411\jetty-websocket-8.1.15.v20140411.jar;C:\Users\shishir.dwivedi\.m2\repository\org\eclipse\jetty\jetty-util\8.1.15.v20140411\jetty-util-8.1.15.v20140411.jar;C:\Users\shishir.dwivedi\.m2\repository\org\eclipse\jetty\jetty-io\8.1.15.v20140411\jetty-io-8.1.15.v20140411.jar;C:\Users\shishir.dwivedi\.m2\repository\org\eclipse\jetty\jetty-http\8.1.15.v20140411\jetty-http-8.1.15.v20140411.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.44.0\selenium-firefox-driver-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.44.0\selenium-ie-driver-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;C:\Users\shishir.dwivedi\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.44.0\selenium-safari-driver-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-support\2.44.0\selenium-support-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\shishir.dwivedi\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\plugins\maven-failsafe-plugin\2.12.4\maven-failsafe-plugin-2.12.4.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-plugin-api\2.0.9\maven-plugin-api-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\surefire\surefire-booter\2.12.4\surefire-booter-2.12.4.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\surefire\surefire-api\2.12.4\surefire-api-2.12.4.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\surefire\maven-surefire-common\2.12.4\maven-surefire-common-2.12.4.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\1.3\maven-common-artifact-filters-1.3.jar;C:\Users\shishir.dwivedi\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-artifact\2.0.9\maven-artifact-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-project\2.0.9\maven-project-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-settings\2.0.9\maven-settings-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-profile\2.0.9\maven-profile-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-artifact-manager\2.0.9\maven-artifact-manager-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-plugin-registry\2.0.9\maven-plugin-registry-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-core\2.0.9\maven-core-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-plugin-parameter-documenter\2.0.9\maven-plugin-parameter-documenter-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.9\maven-reporting-api-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-2\wagon-provider-api-1.0-beta-2.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-repository-metadata\2.0.9\maven-repository-metadata-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-error-diagnostics\2.0.9\maven-error-diagnostics-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-plugin-descriptor\2.0.9\maven-plugin-descriptor-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-monitor\2.0.9\maven-monitor-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\classworlds\classworlds\1.1\classworlds-1.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-toolchain\2.0.9\maven-toolchain-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\plugin-tools\maven-plugin-annotations\3.1\maven-plugin-annotations-3.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\uncommons\reportng\1.1.2\reportng-1.1.2.jar;C:\Users\shishir.dwivedi\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\shishir.dwivedi\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\code\harlib\1.1.2\harlib-1.1.2.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\code\harlib-jackson\1.1.2\harlib-jackson-1.1.2.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\code\harlib-nodoc\1.1.2\harlib-nodoc-1.1.2.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\code\harlib-src\1.1.2\harlib-src-1.1.2.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\code\selendroid-client\0.10.0\selendroid-client-0.10.0.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\code\serialized-php-parser\16.0\serialized-php-parser-16.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\testng\testng\6.8.5\testng-6.8.5.jar;C:\Users\shishir.dwivedi\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\shishir.dwivedi\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\shishir.dwivedi\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;C:\Users\shishir.dwivedi\.m2\repository\org\yaml\snakeyaml\1.6\snakeyaml-1.6.jar;C:\Users\shishir.dwivedi\.m2\repository\javax\mail\mail\1.4\mail-1.4.jar;C:\Users\shishir.dwivedi\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\json\json\20140107\json-20140107.jar;C:\Users\shishir.dwivedi\.m2\repository\br\eti\kinoshita\testlink-java-api\1.9.8-1\testlink-java-api-1.9.8-1.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\slf4j\slf4j-simple\1.7.5\slf4j-simple-1.7.5.jar;C:\Users\shishir.dwivedi\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-configuration\commons-configuration\1.7\commons-configuration-1.7.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-beanutils\commons-beanutils\1.8.3\commons-beanutils-1.8.3.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\xmlrpc\xmlrpc-client\3.1.3\xmlrpc-client-3.1.3.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\Users\shishir.dwivedi\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-lang\commons-lang\2.3\commons-lang-2.3.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\xmlrpc\xmlrpc-common\3.1.3\xmlrpc-common-3.1.3.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\ws\commons\util\ws-commons-util\1.0.2\ws-commons-util-1.0.2.jar;C:\Users\shishir.dwivedi\.m2\repository\io\selendroid\selendroid-standalone\0.12.0\selendroid-standalone-0.12.0.jar;C:\Users\shishir.dwivedi\.m2\repository\io\selendroid\selendroid-common\0.12.0\selendroid-common-0.12.0.jar;C:\Users\shishir.dwivedi\.m2\repository\io\selendroid\selendroid-server-common\0.12.0\selendroid-server-common-0.12.0.jar;C:\Users\shishir.dwivedi\.m2\repository\io\netty\netty-all\4.0.21.Final\netty-all-4.0.21.Final.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\code\gson\gson\2.2.1\gson-2.2.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\httpcomponents\httpclient\4.3.4\httpclient-4.3.4.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar;C:\Users\shishir.dwivedi\.m2\repository\com\android\tools\ddms\ddmlib\23.0.1\ddmlib-23.0.1.jar;C:\Users\shishir.dwivedi\.m2\repository\net\sf\kxml\kxml2\2.3.0\kxml2-2.3.0.jar;C:\Users\shishir.dwivedi\.m2\repository\com\android\tools\common\23.0.1\common-23.0.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\commons\commons-compress\1.5\commons-compress-1.5.jar;C:\Users\shishir.dwivedi\.m2\repository\org\tukaani\xz\1.2\xz-1.2.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\guava\guava\17.0\guava-17.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;C:\Users\shishir.dwivedi\.m2\repository\in\payu\Common\1.0\Common-1.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\plugins\maven-surefire-plugin\2.17\maven-surefire-plugin-2.17.jar;C:\Users\shishir.dwivedi\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;C:\Users\shishir.dwivedi\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\poi\poi\3.10-FINAL\poi-3.10-FINAL.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-codec\commons-codec\1.5\commons-codec-1.5.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\poi\poi-ooxml\3.9\poi-ooxml-3.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.9\poi-ooxml-schemas-3.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\xmlbeans\xmlbeans\2.3.0\xmlbeans-2.3.0.jar;C:\Users\shishir.dwivedi\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\shishir.dwivedi\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\shishir.dwivedi\.m2\repository\com\sun\mail\javax.mail\1.5.2\javax.mail-1.5.2.jar;C:\Users\shishir.dwivedi\.m2\repository\com\opera\operadriver\1.5\operadriver-1.5.jar;C:\Users\shishir.dwivedi\.m2\repository\com\opera\operalaunchers\1.1\operalaunchers-1.1.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\protobuf\protobuf-java\2.4.1\protobuf-java-2.4.1.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\shishir.dwivedi\.m2\repository\org\ini4j\ini4j\0.5.2\ini4j-0.5.2.jar;C:\Users\shishir.dwivedi\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\plugins\maven-deploy-plugin\2.7\maven-deploy-plugin-2.7.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-model\2.0.6\maven-model-2.0.6.jar;C:\Users\shishir.dwivedi\.m2\repository\emma\emma\2.1.5320\emma-2.1.5320.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\inject\guice\3.0\guice-3.0.jar;C:\Users\shishir.dwivedi\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\shishir.dwivedi\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\jsoup\jsoup\1.7.2\jsoup-1.7.2.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="Config.properties.Browser" value="chrome"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\shishir.dwivedi"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="shishir.dwivedi"/>
+    <property name="java.class.path" value="C:\PayuAutomation\automation\Product\target\test-classes;C:\PayuAutomation\automation\Product\target\classes;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-java\2.44.0\selenium-java-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.44.0\selenium-chrome-driver-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.44.0\selenium-remote-driver-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-api\2.44.0\selenium-api-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.44.0\selenium-htmlunit-driver-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.15\htmlunit-2.15.jar;C:\Users\shishir.dwivedi\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar;C:\Users\shishir.dwivedi\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\httpcomponents\httpmime\4.3.3\httpmime-4.3.3.jar;C:\Users\shishir.dwivedi\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.15\htmlunit-core-js-2.15.jar;C:\Users\shishir.dwivedi\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\shishir.dwivedi\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.21\nekohtml-1.9.21.jar;C:\Users\shishir.dwivedi\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.14\cssparser-0.9.14.jar;C:\Users\shishir.dwivedi\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\shishir.dwivedi\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.15.v20140411\jetty-websocket-8.1.15.v20140411.jar;C:\Users\shishir.dwivedi\.m2\repository\org\eclipse\jetty\jetty-util\8.1.15.v20140411\jetty-util-8.1.15.v20140411.jar;C:\Users\shishir.dwivedi\.m2\repository\org\eclipse\jetty\jetty-io\8.1.15.v20140411\jetty-io-8.1.15.v20140411.jar;C:\Users\shishir.dwivedi\.m2\repository\org\eclipse\jetty\jetty-http\8.1.15.v20140411\jetty-http-8.1.15.v20140411.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.44.0\selenium-firefox-driver-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.44.0\selenium-ie-driver-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;C:\Users\shishir.dwivedi\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.44.0\selenium-safari-driver-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\seleniumhq\selenium\selenium-support\2.44.0\selenium-support-2.44.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\shishir.dwivedi\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\plugins\maven-failsafe-plugin\2.12.4\maven-failsafe-plugin-2.12.4.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-plugin-api\2.0.9\maven-plugin-api-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\surefire\surefire-booter\2.12.4\surefire-booter-2.12.4.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\surefire\surefire-api\2.12.4\surefire-api-2.12.4.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\surefire\maven-surefire-common\2.12.4\maven-surefire-common-2.12.4.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\1.3\maven-common-artifact-filters-1.3.jar;C:\Users\shishir.dwivedi\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-artifact\2.0.9\maven-artifact-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-project\2.0.9\maven-project-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-settings\2.0.9\maven-settings-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-profile\2.0.9\maven-profile-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-artifact-manager\2.0.9\maven-artifact-manager-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-plugin-registry\2.0.9\maven-plugin-registry-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-core\2.0.9\maven-core-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-plugin-parameter-documenter\2.0.9\maven-plugin-parameter-documenter-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.9\maven-reporting-api-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-2\wagon-provider-api-1.0-beta-2.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-repository-metadata\2.0.9\maven-repository-metadata-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-error-diagnostics\2.0.9\maven-error-diagnostics-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-plugin-descriptor\2.0.9\maven-plugin-descriptor-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-monitor\2.0.9\maven-monitor-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\classworlds\classworlds\1.1\classworlds-1.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-toolchain\2.0.9\maven-toolchain-2.0.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\plugin-tools\maven-plugin-annotations\3.1\maven-plugin-annotations-3.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\uncommons\reportng\1.1.2\reportng-1.1.2.jar;C:\Users\shishir.dwivedi\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\shishir.dwivedi\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\code\harlib\1.1.2\harlib-1.1.2.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\code\harlib-jackson\1.1.2\harlib-jackson-1.1.2.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\code\harlib-nodoc\1.1.2\harlib-nodoc-1.1.2.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\code\harlib-src\1.1.2\harlib-src-1.1.2.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\code\selendroid-client\0.10.0\selendroid-client-0.10.0.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\code\serialized-php-parser\16.0\serialized-php-parser-16.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\testng\testng\6.8.5\testng-6.8.5.jar;C:\Users\shishir.dwivedi\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\shishir.dwivedi\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\shishir.dwivedi\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;C:\Users\shishir.dwivedi\.m2\repository\org\yaml\snakeyaml\1.6\snakeyaml-1.6.jar;C:\Users\shishir.dwivedi\.m2\repository\javax\mail\mail\1.4\mail-1.4.jar;C:\Users\shishir.dwivedi\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\json\json\20140107\json-20140107.jar;C:\Users\shishir.dwivedi\.m2\repository\br\eti\kinoshita\testlink-java-api\1.9.8-1\testlink-java-api-1.9.8-1.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\slf4j\slf4j-simple\1.7.5\slf4j-simple-1.7.5.jar;C:\Users\shishir.dwivedi\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-configuration\commons-configuration\1.7\commons-configuration-1.7.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-beanutils\commons-beanutils\1.8.3\commons-beanutils-1.8.3.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\xmlrpc\xmlrpc-client\3.1.3\xmlrpc-client-3.1.3.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\Users\shishir.dwivedi\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-lang\commons-lang\2.3\commons-lang-2.3.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\xmlrpc\xmlrpc-common\3.1.3\xmlrpc-common-3.1.3.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\ws\commons\util\ws-commons-util\1.0.2\ws-commons-util-1.0.2.jar;C:\Users\shishir.dwivedi\.m2\repository\io\selendroid\selendroid-standalone\0.12.0\selendroid-standalone-0.12.0.jar;C:\Users\shishir.dwivedi\.m2\repository\io\selendroid\selendroid-common\0.12.0\selendroid-common-0.12.0.jar;C:\Users\shishir.dwivedi\.m2\repository\io\selendroid\selendroid-server-common\0.12.0\selendroid-server-common-0.12.0.jar;C:\Users\shishir.dwivedi\.m2\repository\io\netty\netty-all\4.0.21.Final\netty-all-4.0.21.Final.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\code\gson\gson\2.2.1\gson-2.2.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\httpcomponents\httpclient\4.3.4\httpclient-4.3.4.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar;C:\Users\shishir.dwivedi\.m2\repository\com\android\tools\ddms\ddmlib\23.0.1\ddmlib-23.0.1.jar;C:\Users\shishir.dwivedi\.m2\repository\net\sf\kxml\kxml2\2.3.0\kxml2-2.3.0.jar;C:\Users\shishir.dwivedi\.m2\repository\com\android\tools\common\23.0.1\common-23.0.1.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\commons\commons-compress\1.5\commons-compress-1.5.jar;C:\Users\shishir.dwivedi\.m2\repository\org\tukaani\xz\1.2\xz-1.2.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\guava\guava\17.0\guava-17.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;C:\Users\shishir.dwivedi\.m2\repository\in\payu\Common\1.0\Common-1.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\plugins\maven-surefire-plugin\2.17\maven-surefire-plugin-2.17.jar;C:\Users\shishir.dwivedi\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;C:\Users\shishir.dwivedi\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\poi\poi\3.10-FINAL\poi-3.10-FINAL.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-codec\commons-codec\1.5\commons-codec-1.5.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\poi\poi-ooxml\3.9\poi-ooxml-3.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.9\poi-ooxml-schemas-3.9.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\xmlbeans\xmlbeans\2.3.0\xmlbeans-2.3.0.jar;C:\Users\shishir.dwivedi\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\shishir.dwivedi\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\shishir.dwivedi\.m2\repository\com\sun\mail\javax.mail\1.5.2\javax.mail-1.5.2.jar;C:\Users\shishir.dwivedi\.m2\repository\com\opera\operadriver\1.5\operadriver-1.5.jar;C:\Users\shishir.dwivedi\.m2\repository\com\opera\operalaunchers\1.1\operalaunchers-1.1.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\protobuf\protobuf-java\2.4.1\protobuf-java-2.4.1.jar;C:\Users\shishir.dwivedi\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\shishir.dwivedi\.m2\repository\org\ini4j\ini4j\0.5.2\ini4j-0.5.2.jar;C:\Users\shishir.dwivedi\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\plugins\maven-deploy-plugin\2.7\maven-deploy-plugin-2.7.jar;C:\Users\shishir.dwivedi\.m2\repository\org\apache\maven\maven-model\2.0.6\maven-model-2.0.6.jar;C:\Users\shishir.dwivedi\.m2\repository\emma\emma\2.1.5320\emma-2.1.5320.jar;C:\Users\shishir.dwivedi\.m2\repository\com\google\inject\guice\3.0\guice-3.0.jar;C:\Users\shishir.dwivedi\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\shishir.dwivedi\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\shishir.dwivedi\.m2\repository\org\jsoup\jsoup\1.7.2\jsoup-1.7.2.jar;"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_11\jre"/>
+    <property name="sun.java.command" value="C:\Users\SHISHI~1.DWI\AppData\Local\Temp\surefirebooter8713582716217976865.jar C:\Users\SHISHI~1.DWI\AppData\Local\Temp\surefire2162949915874990627tmp C:\Users\SHISHI~1.DWI\AppData\Local\Temp\surefire2804609404531272702tmp"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_11\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_11\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_11\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_11\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_11\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_11\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_11\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_11\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_11\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="localRepository" value="C:\Users\shishir.dwivedi\.m2\repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Test.AdminPanel.Payments.TestSeamlessStoreCard" name="testTransactionSavedSeamlessStoredcard" time="108.968">
+    <failure message="Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1236f234
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 808d99f7-893c-4a8b-8712-f285d42e1f2e" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1236f234
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 808d99f7-893c-4a8b-8712-f285d42e1f2e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Utils.Browser.waitForPageLoad(Browser.java:563)
+	at PageObject.AdminPanel.Home.AdminPage.&lt;init&gt;(AdminPage.java:26)
+	at Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)
+	at Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard(TestSeamlessStoreCard.java:370)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Admin Login&quot;}
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 808d99f7-893c-4a8b-8712-f285d42e1f2e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 16 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Admin Login&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous8478796089914106627webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous8478796089914106627webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548)
+</failure>
+    <system-out>Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:08:14 IST 2014&apos;
+Wait for page load by waiting for element [oxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1236f234
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:08:31 IST 2014&apos;
+Wait for page load by waiting for element [oxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@2483c9b7
+Wait for page load by waiting for element [oxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@5feb2b12
+&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/home
+&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-09-55_Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard.png target=&apos;_blank&apos; &gt;2014-11-15_19-09-55_Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard.png&lt;/a&gt;
+org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1236f234
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 808d99f7-893c-4a8b-8712-f285d42e1f2e
+</system-out>
+  </testcase>
+  <testcase classname="Test.AdminPanel.Payments.TestSeamlessStoreCard" name="SavedDebitCardTransaction" time="127.7">
+    <failure message="Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@2483c9b7
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0d121897-3cd5-4000-bbc1-bcf54b78fc6d" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@2483c9b7
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0d121897-3cd5-4000-bbc1-bcf54b78fc6d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Utils.Browser.waitForPageLoad(Browser.java:563)
+	at PageObject.AdminPanel.Home.AdminPage.&lt;init&gt;(AdminPage.java:26)
+	at Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)
+	at Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction(TestSeamlessStoreCard.java:350)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Admin Login&quot;}
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0d121897-3cd5-4000-bbc1-bcf54b78fc6d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 16 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Admin Login&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous3759229522390991861webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous3759229522390991861webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548)
+</failure>
+    <system-out>Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:08:14 IST 2014&apos;
+Wait for page load by waiting for element [oxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1236f234
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:08:31 IST 2014&apos;
+Wait for page load by waiting for element [oxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@2483c9b7
+Wait for page load by waiting for element [oxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@5feb2b12
+&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/home
+&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-09-55_Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard.png target=&apos;_blank&apos; &gt;2014-11-15_19-09-55_Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard.png&lt;/a&gt;
+org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1236f234
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 808d99f7-893c-4a8b-8712-f285d42e1f2e
+</system-out>
+  </testcase>
+  <testcase classname="Test.AdminPanel.Payments.TestSeamlessStoreCard" name="Save_new_store_DCcard" time="143.992">
+    <failure message="Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@5feb2b12
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2c72bd8a-2c13-43bf-9388-fde9e29e20e9" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@5feb2b12
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2c72bd8a-2c13-43bf-9388-fde9e29e20e9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Utils.Browser.waitForPageLoad(Browser.java:563)
+	at PageObject.AdminPanel.Home.AdminPage.&lt;init&gt;(AdminPage.java:26)
+	at Test.AdminPanel.Payments.TransactionHelper.DoLogin(TransactionHelper.java:142)
+	at Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard(TestSeamlessStoreCard.java:37)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Admin Login&quot;}
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2c72bd8a-2c13-43bf-9388-fde9e29e20e9
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 16 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Admin Login&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous632558720331228893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SHISHI~1.DWI/AppData/Local/Temp/anonymous632558720331228893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548)
+</failure>
+    <system-out>Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessStoreCard.SavedDebitCardTransaction&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:08:14 IST 2014&apos;
+Wait for page load by waiting for element [oxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1236f234
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessStoreCard.Save_new_store_DCcard&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:08:31 IST 2014&apos;
+Wait for page load by waiting for element [oxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@2483c9b7
+Wait for page load by waiting for element [oxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@5feb2b12
+&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/home
+&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-09-55_Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard.png target=&apos;_blank&apos; &gt;2014-11-15_19-09-55_Test.AdminPanel.Payments.TestSeamlessStoreCard.testTransactionSavedSeamlessStoredcard.png&lt;/a&gt;
+org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1236f234
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;ShishirDwivedi&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=29.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 808d99f7-893c-4a8b-8712-f285d42e1f2e
+</system-out>
+  </testcase>
+  <testcase classname="Test.AdminPanel.Payments.TestTransactionNB" name="test_NB_AXISNB" time="48.94"/>
+  <testcase classname="Test.AdminPanel.Payments.TestTransactionSeamlessNB" name="test_Seamless_NB_AXISNB" time="34.721"/>
+  <testcase classname="Test.AdminPanel.Payments.TestSeamlessRSA" name="test_CC_RSA" time="68.429">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Test.AdminPanel.Payments.TestSeamlessRSA.test_CC_RSA(TestSeamlessRSA.java:41)
+</failure>
+    <system-out>Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessRSA.test_CC_RSA&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:12:25 IST 2014&apos;
+Wait for page load by waiting for element [link text: Admin Login]
+Click on &apos;Admin Login link&apos;
+Wait for page load by waiting for element [id: username]
+Enter the User name as &apos;qc2&apos;
+Enter the Password as &apos;Password2&apos;
+Click on &apos;Submit Button&apos;
+Wait for page load by waiting for element [link text: Test Transaction]
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestSeamlessRSA.test_CC_RSA&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:12:30 IST 2014&apos;
+Wait for page load by waiting for element [link text: Test Transaction]
+Click on &apos;Test Transaction Link&apos;
+Wait for page load by waiting for element [name: amount]
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select count(*) cnt from merchant_payment_type mpt where mpt.merchantid=&apos;5910&apos; and mpt.ibibo_code = &apos;CC&apos; and mpt.pg_id = &apos;&apos; and mpt.active=1;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/testpay
+&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-12-33_Test.AdminPanel.Payments.TestSeamlessRSA.test_CC_RSA.png target=&apos;_blank&apos; &gt;2014-11-15_19-12-33_Test.AdminPanel.Payments.TestSeamlessRSA.test_CC_RSA.png&lt;/a&gt;
+Payment type CC with pg_gateway_id  is NOT present for merchantid 5910
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Click on &apos;Merchant Drop Down&apos;
+Wait for &apos;1&apos; seconds
+Enter the Search Merchant Key as &apos; - QBKSbB&apos;
+Wait for &apos;2&apos; seconds
+Get the WebElement with xPath://label/span[contains(text(),&apos; - QBKSbB&apos;)]
+Click on &apos;Merchant&apos;
+Enter the Amount as &apos;1.00&apos;
+Enter the Email as &apos;payu.testing@gmail.com&apos;
+Enter the First Name as &apos;TestingFirst&apos;
+Enter the Public Key as &apos;publickey1234&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;
+Enter the PG Code as &apos;CC&apos;
+Enter the Ibibo Code as &apos;CC&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;CardDetails&apos;
+Enter the Name on Card as &apos;Test Card&apos;
+Enter the Card Number as &apos;5123456789012346&apos;
+Enter the CVV as &apos;123&apos;
+Enter the Expiry month as &apos;05&apos;
+Enter the Expiry year as &apos;2017&apos;
+Click on &apos;Transaction&apos;
+Wait for &apos;15&apos; seconds
+Wait for page load by waiting for element [tag name: pre]
+Verified &apos;Processing Page URL for Seamless RSA&apos; as :-&apos;https://secure.payu.in/_seamless_payment&apos;
+Verified &apos;Count of Response Parameters&apos; as :-&apos;50&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TestResponse&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select max(id) as mihpayid, merchantid, bank_ref_no as bank_ref_num, field9 as field9 from transaction where txnid = &apos;d9b2e38d056bce7a15a5&apos;;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select card_token from txn_info where payu_id=&apos;403993715510413240&apos;;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+Verified &apos;Response Param &apos;amount&apos;&apos; as :-&apos;1.00&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;
+Expected &apos;Response Param &apos;PG_TYPE&apos;&apos; was :-&apos;&apos;. But actual is &apos;AXISPG&apos;
+Verified &apos;Response Param &apos;mode&apos;&apos; as :-&apos;CC&apos;
+Skipping the verification of Response Param &apos;phone&apos; as &apos;1234567890&apos;
+Skipping the verification of Response Param &apos;productinfo&apos; as &apos;Product Info&apos;
+Verified &apos;Response Param &apos;discount&apos;&apos; as :-&apos;0.00&apos;
+Verified &apos;Response Param &apos;addedon&apos;&apos; as :-&apos;2014-11-15 19:12:41&apos;
+Verified &apos;Response Param &apos;unmappedstatus&apos;&apos; as :-&apos;captured&apos;
+Verified &apos;Response Param &apos;mihpayid&apos;&apos; as :-&apos;403993715510413240&apos;
+Skipping the verification of Response Param &apos;address2&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;address1&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;city&apos; as &apos;&apos;
+Verified &apos;Response Param &apos;key&apos;&apos; as :-&apos;QBKSbB&apos;
+Verified &apos;Response Param &apos;bank_ref_num&apos;&apos; as :-&apos;199740&apos;
+Verified &apos;Response Param &apos;txnid&apos;&apos; as :-&apos;d9b2e38d056bce7a15a5&apos;
+Verified &apos;Response Param &apos;email&apos;&apos; as :-&apos;payu.testing@gmail.com&apos;
+Verified &apos;Response Param &apos;bankcode&apos;&apos; as :-&apos;CC&apos;
+Verified &apos;Response Param &apos;error&apos;&apos; as :-&apos;E000&apos;
+Verified &apos;Response Param &apos;error_Message&apos;&apos; as :-&apos;No Error&apos;
+Skipping the verification of Response Param &apos;udf1&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf2&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf3&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf4&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf5&apos; as &apos;&apos;
+Verified &apos;Response Param &apos;udf6&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf7&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf8&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf9&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf10&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;status&apos;&apos; as :-&apos;success&apos;
+Verified &apos;Response Param &apos;cardhash&apos;&apos; as :-&apos;This field is no longer supported in postback params.&apos;
+Verified &apos;Response Param &apos;cardnum&apos;&apos; as :-&apos;512345XXXXXX2346&apos;
+Skipping the verification of Response Param &apos;lastname&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;field1&apos; as &apos;199740&apos;
+Skipping the verification of Response Param &apos;field2&apos; as &apos;432000397180&apos;
+Skipping the verification of Response Param &apos;field3&apos; as &apos;20141116&apos;
+Verified &apos;Response Param &apos;field4&apos;&apos; as :-&apos;MC&apos;
+Skipping the verification of Response Param &apos;field5&apos; as &apos;397180&apos;
+Verified &apos;Response Param &apos;field6&apos;&apos; as :-&apos;00&apos;
+Verified &apos;Response Param &apos;field7&apos;&apos; as :-&apos;0&apos;
+Verified &apos;Response Param &apos;field8&apos;&apos; as :-&apos;3DS&apos;
+Skipping the verification of Response Param &apos;field9&apos; as &apos;Successful Verification of Secure Hash:  -- Approved -- Transaction Successful -- Unable to be determined--E219&apos;
+Skipping the verification of Response Param &apos;country&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;hash&apos; as &apos;571f54e7d68f4236e2ece65fddeacb2e4795b6591f4a825cb38539cf75cf2ddf2ee8900474eced2c73d274c4ae8d215c22934c96672311fd8ac5a9686d6e6c9f&apos;
+Verified &apos;Response Param &apos;firstname&apos;&apos; as :-&apos;TestingFirst&apos;
+Skipping the verification of Response Param &apos;zipcode&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;state&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;name_on_card&apos; as &apos;Test Card&apos;
+Verified &apos;Response Param &apos;net_amount_debit&apos;&apos; as :-&apos;1&apos;
+Skipping the verification of Response Param &apos;payment_source&apos; as &apos;payu&apos;
+&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/test_response
+&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-13-29_Test.AdminPanel.Payments.TestSeamlessRSA.test_CC_RSA.png target=&apos;_blank&apos; &gt;2014-11-15_19-13-29_Test.AdminPanel.Payments.TestSeamlessRSA.test_CC_RSA.png&lt;/a&gt;
+Failed to verify Test Response
+</system-out>
+  </testcase>
+  <testcase classname="Test.AdminPanel.Payments.TestTransactionDC" name="test_DC_HDFC2" time="16.114">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+	at Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:788)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:764)
+	at Test.AdminPanel.Payments.TestTransactionDC.test_DC_HDFC2(TestTransactionDC.java:777)
+</failure>
+    <system-out>Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestTransactionDC.test_DC_HDFC2&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:13:42 IST 2014&apos;
+Wait for page load by waiting for element [link text: Admin Login]
+Click on &apos;Admin Login link&apos;
+Wait for page load by waiting for element [id: username]
+Enter the User name as &apos;qc2&apos;
+Enter the Password as &apos;Password2&apos;
+Click on &apos;Submit Button&apos;
+Wait for page load by waiting for element [link text: Test Transaction]
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestTransactionDC.test_DC_HDFC2&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:13:46 IST 2014&apos;
+Wait for page load by waiting for element [link text: Test Transaction]
+Click on &apos;Test Transaction Link&apos;
+Wait for page load by waiting for element [name: amount]
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select count(*) cnt from merchant_payment_type mpt where mpt.merchantid=&apos;5912&apos; and mpt.ibibo_code = &apos;MAST&apos; and mpt.pg_id = &apos;&apos; and mpt.active=1;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/testpay
+&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-13-50_Test.AdminPanel.Payments.TestTransactionDC.test_DC_HDFC2.png target=&apos;_blank&apos; &gt;2014-11-15_19-13-50_Test.AdminPanel.Payments.TestTransactionDC.test_DC_HDFC2.png&lt;/a&gt;
+Payment type MAST with pg_gateway_id  is NOT present for merchantid 5912
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select * from paymentgateway pg where pg.key = &apos;HDFCPG&apos; and pg.isactive=1;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+No data was returned for this query
+</system-out>
+  </testcase>
+  <testcase classname="Test.AdminPanel.IframePayments.TestIframeTransactionCC" name="test_IframeCC_HDFC2" time="50.756">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Test.AdminPanel.IframePayments.TestIframeTransactionCC.test_IframeCC_HDFC2(TestIframeTransactionCC.java:86)
+</failure>
+    <system-out>Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.IframePayments.TestIframeTransactionCC.test_IframeCC_HDFC2&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:14:10 IST 2014&apos;
+Wait for page load by waiting for element [link text: Admin Login]
+Click on &apos;Admin Login link&apos;
+Wait for page load by waiting for element [id: username]
+Enter the User name as &apos;qc2&apos;
+Enter the Password as &apos;Password2&apos;
+Click on &apos;Submit Button&apos;
+Wait for page load by waiting for element [link text: Test Transaction]
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.IframePayments.TestIframeTransactionCC.test_IframeCC_HDFC2&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:14:14 IST 2014&apos;
+Wait for page load by waiting for element [link text: Test Transaction]
+Click on &apos;Test Merchant Transaction Link&apos;
+Wait for page load by waiting for element [name: amount]
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select count(*) cnt from merchant_payment_type mpt where mpt.merchantid=&apos;6356&apos; and mpt.ibibo_code = &apos;CC&apos; and mpt.pg_id = &apos;&apos; and mpt.active=1;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/testpay?merchant_transaction=true
+&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-14-18_Test.AdminPanel.IframePayments.TestIframeTransactionCC.test_IframeCC_HDFC2.png target=&apos;_blank&apos; &gt;2014-11-15_19-14-18_Test.AdminPanel.IframePayments.TestIframeTransactionCC.test_IframeCC_HDFC2.png&lt;/a&gt;
+Payment type CC with pg_gateway_id  is NOT present for merchantid 6356
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Click on &apos;Merchant Drop Down&apos;
+Wait for &apos;1&apos; seconds
+Enter the Search Merchant Key as &apos; - gTFtsb&apos;
+Wait for &apos;2&apos; seconds
+Get the WebElement with xPath://label/span[contains(text(),&apos; - gTFtsb&apos;)]
+Click on &apos;Merchant&apos;
+Enter the Amount as &apos;1.00&apos;
+Enter the Email as &apos;payu.testing@gmail.com&apos;
+Enter the First Name as &apos;TestingFirst&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Click on &apos;Merchant Drop Down&apos;
+Wait for &apos;1&apos; seconds
+Enter the Search Merchant Key as &apos; - gTFtsb&apos;
+Wait for &apos;2&apos; seconds
+Get the WebElement with xPath://label/span[contains(text(),&apos; - gTFtsb&apos;)]
+Click on &apos;Merchant&apos;
+Enter the Amount as &apos;1.00&apos;
+Enter the Email as &apos;payu.testing@gmail.com&apos;
+Enter the First Name as &apos;TestingFirst&apos;
+Submit &apos;Transaction&apos;
+Get the WebElement with css:input[type=&apos;submit&apos;]
+Get the WebElement with css:a
+Click on &apos;Credit Card Tab&apos;
+Wait for page load by waiting for element [xpath: //input[@value=&apos;Make Payment&apos;]]
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;CardDetails&apos;
+Enter the Card Number as &apos;5123456789012346&apos;
+Enter the Name on Card as &apos;Test Card&apos;
+Enter the CVV as &apos;123&apos;
+Select the Expiry month dropdown value &apos;05&apos;
+Select the Expiry year dropdown value &apos;2017&apos;
+Press the key &apos;?&apos; on CreditCard MakePayment
+Wait for &apos;15&apos; seconds
+Wait for page load by waiting for element [tag name: pre]
+Verified &apos;Count of Response Parameters&apos; as :-&apos;50&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TestResponse&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select max(id) as mihpayid, merchantid, bank_ref_no as bank_ref_num, field9 as field9 from transaction where txnid = &apos;ca663465e1d1ce8eb04c&apos;;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select card_token from txn_info where payu_id=&apos;403993715510413250&apos;;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+Verified &apos;Response Param &apos;amount&apos;&apos; as :-&apos;1.00&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;
+Expected &apos;Response Param &apos;PG_TYPE&apos;&apos; was :-&apos;&apos;. But actual is &apos;HDFCPG&apos;
+Verified &apos;Response Param &apos;mode&apos;&apos; as :-&apos;CC&apos;
+Skipping the verification of Response Param &apos;phone&apos; as &apos;1234567890&apos;
+Skipping the verification of Response Param &apos;productinfo&apos; as &apos;Product Info&apos;
+Verified &apos;Response Param &apos;discount&apos;&apos; as :-&apos;0.00&apos;
+Verified &apos;Response Param &apos;addedon&apos;&apos; as :-&apos;2014-11-15 19:14:27&apos;
+Verified &apos;Response Param &apos;unmappedstatus&apos;&apos; as :-&apos;captured&apos;
+Verified &apos;Response Param &apos;mihpayid&apos;&apos; as :-&apos;403993715510413250&apos;
+Skipping the verification of Response Param &apos;address2&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;address1&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;city&apos; as &apos;&apos;
+Verified &apos;Response Param &apos;key&apos;&apos; as :-&apos;gTFtsb&apos;
+Verified &apos;Response Param &apos;bank_ref_num&apos;&apos; as :-&apos;1130600141943191&apos;
+Verified &apos;Response Param &apos;txnid&apos;&apos; as :-&apos;ca663465e1d1ce8eb04c&apos;
+Verified &apos;Response Param &apos;email&apos;&apos; as :-&apos;payu.testing@gmail.com&apos;
+Verified &apos;Response Param &apos;bankcode&apos;&apos; as :-&apos;CC&apos;
+Verified &apos;Response Param &apos;error&apos;&apos; as :-&apos;E000&apos;
+Verified &apos;Response Param &apos;error_Message&apos;&apos; as :-&apos;No Error&apos;
+Skipping the verification of Response Param &apos;udf1&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf2&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf3&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf4&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf5&apos; as &apos;&apos;
+Verified &apos;Response Param &apos;udf6&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf7&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf8&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf9&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf10&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;status&apos;&apos; as :-&apos;success&apos;
+Verified &apos;Response Param &apos;cardhash&apos;&apos; as :-&apos;This field is no longer supported in postback params.&apos;
+Verified &apos;Response Param &apos;cardnum&apos;&apos; as :-&apos;512345XXXXXX2346&apos;
+Skipping the verification of Response Param &apos;lastname&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;field1&apos; as &apos;431964187860&apos;
+Verified &apos;Response Param &apos;field2&apos;&apos; as :-&apos;999999&apos;
+Skipping the verification of Response Param &apos;field3&apos; as &apos;1130600141943191&apos;
+Verified &apos;Response Param &apos;field4&apos;&apos; as :-&apos;-1&apos;
+Verified &apos;Response Param &apos;field5&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;field6&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;field7&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;field8&apos;&apos; as :-&apos;&apos;
+Skipping the verification of Response Param &apos;field9&apos; as &apos;SUCCESS&apos;
+Skipping the verification of Response Param &apos;country&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;hash&apos; as &apos;cffa0f119374c9ab0112b7f1a2f465e1d5d60fb980b968910264178e4430d802053cb0e6ae3c9b1c2901e6fd14a63d0118230c7cdb5a3fd2c5a5cbc7311f1002&apos;
+Verified &apos;Response Param &apos;firstname&apos;&apos; as :-&apos;TestingFirst&apos;
+Skipping the verification of Response Param &apos;zipcode&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;state&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;name_on_card&apos; as &apos;Test Card&apos;
+Verified &apos;Response Param &apos;net_amount_debit&apos;&apos; as :-&apos;1&apos;
+Skipping the verification of Response Param &apos;payment_source&apos; as &apos;payu&apos;
+&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/test_response
+&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-14-55_Test.AdminPanel.IframePayments.TestIframeTransactionCC.test_IframeCC_HDFC2.png target=&apos;_blank&apos; &gt;2014-11-15_19-14-55_Test.AdminPanel.IframePayments.TestIframeTransactionCC.test_IframeCC_HDFC2.png&lt;/a&gt;
+Failed to verify Test Response
+</system-out>
+  </testcase>
+  <testcase classname="Test.AdminPanel.Payments.TestTransactionSeamless" name="test_CC_AXIS" time="72.6">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Test.AdminPanel.Payments.TestTransactionSeamless.test_CC_AXIS(TestTransactionSeamless.java:303)
+</failure>
+    <system-out>Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestTransactionSeamless.test_CC_AXIS&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:15:11 IST 2014&apos;
+Wait for page load by waiting for element [link text: Admin Login]
+Click on &apos;Admin Login link&apos;
+Wait for page load by waiting for element [id: username]
+Enter the User name as &apos;qc2&apos;
+Enter the Password as &apos;Password2&apos;
+Click on &apos;Submit Button&apos;
+Wait for page load by waiting for element [link text: Test Transaction]
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestTransactionSeamless.test_CC_AXIS&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:15:14 IST 2014&apos;
+Wait for page load by waiting for element [link text: Test Transaction]
+Click on &apos;Test Transaction Link&apos;
+Wait for page load by waiting for element [name: amount]
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select count(*) cnt from merchant_payment_type mpt where mpt.merchantid=&apos;5910&apos; and mpt.ibibo_code = &apos;CC&apos; and mpt.pg_id = &apos;&apos; and mpt.active=1;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/testpay
+&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-15-19_Test.AdminPanel.Payments.TestTransactionSeamless.test_CC_AXIS.png target=&apos;_blank&apos; &gt;2014-11-15_19-15-19_Test.AdminPanel.Payments.TestTransactionSeamless.test_CC_AXIS.png&lt;/a&gt;
+Payment type CC with pg_gateway_id  is NOT present for merchantid 5910
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Click on &apos;Merchant Drop Down&apos;
+Wait for &apos;1&apos; seconds
+Enter the Search Merchant Key as &apos; - QBKSbB&apos;
+Wait for &apos;2&apos; seconds
+Get the WebElement with xPath://label/span[contains(text(),&apos; - QBKSbB&apos;)]
+Click on &apos;Merchant&apos;
+Enter the Amount as &apos;1.00&apos;
+Enter the Email as &apos;payu.testing@gmail.com&apos;
+Enter the First Name as &apos;TestingFirst&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;
+Enter the PG Code as &apos;CC&apos;
+Enter the Ibibo Code as &apos;CC&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;CardDetails&apos;
+Enter the Name on Card as &apos;Test Card&apos;
+Enter the Card Number as &apos;5123456789012346&apos;
+Enter the CVV as &apos;123&apos;
+Enter the Expiry month as &apos;05&apos;
+Enter the Expiry year as &apos;2017&apos;
+Submit &apos;Transaction&apos;
+Wait for &apos;15&apos; seconds
+Wait for page load by waiting for element [tag name: pre]
+Verified &apos;Count of Response Parameters&apos; as :-&apos;50&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TestResponse&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select max(id) as mihpayid, merchantid, bank_ref_no as bank_ref_num, field9 as field9 from transaction where txnid = &apos;d0abc5ed335871a3cf8a&apos;;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select card_token from txn_info where payu_id=&apos;403993715510413254&apos;;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+Verified &apos;Response Param &apos;amount&apos;&apos; as :-&apos;1.00&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;
+Expected &apos;Response Param &apos;PG_TYPE&apos;&apos; was :-&apos;&apos;. But actual is &apos;AXISPG&apos;
+Verified &apos;Response Param &apos;mode&apos;&apos; as :-&apos;CC&apos;
+Skipping the verification of Response Param &apos;phone&apos; as &apos;1234567890&apos;
+Skipping the verification of Response Param &apos;productinfo&apos; as &apos;Product Info&apos;
+Verified &apos;Response Param &apos;discount&apos;&apos; as :-&apos;0.00&apos;
+Verified &apos;Response Param &apos;addedon&apos;&apos; as :-&apos;2014-11-15 19:15:28&apos;
+Verified &apos;Response Param &apos;unmappedstatus&apos;&apos; as :-&apos;captured&apos;
+Verified &apos;Response Param &apos;mihpayid&apos;&apos; as :-&apos;403993715510413254&apos;
+Skipping the verification of Response Param &apos;address2&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;address1&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;city&apos; as &apos;&apos;
+Verified &apos;Response Param &apos;key&apos;&apos; as :-&apos;QBKSbB&apos;
+Verified &apos;Response Param &apos;bank_ref_num&apos;&apos; as :-&apos;199742&apos;
+Verified &apos;Response Param &apos;txnid&apos;&apos; as :-&apos;d0abc5ed335871a3cf8a&apos;
+Verified &apos;Response Param &apos;email&apos;&apos; as :-&apos;payu.testing@gmail.com&apos;
+Verified &apos;Response Param &apos;bankcode&apos;&apos; as :-&apos;CC&apos;
+Verified &apos;Response Param &apos;error&apos;&apos; as :-&apos;E000&apos;
+Verified &apos;Response Param &apos;error_Message&apos;&apos; as :-&apos;No Error&apos;
+Skipping the verification of Response Param &apos;udf1&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf2&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf3&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf4&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf5&apos; as &apos;&apos;
+Verified &apos;Response Param &apos;udf6&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf7&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf8&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf9&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf10&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;status&apos;&apos; as :-&apos;success&apos;
+Verified &apos;Response Param &apos;cardhash&apos;&apos; as :-&apos;This field is no longer supported in postback params.&apos;
+Verified &apos;Response Param &apos;cardnum&apos;&apos; as :-&apos;512345XXXXXX2346&apos;
+Skipping the verification of Response Param &apos;lastname&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;field1&apos; as &apos;199742&apos;
+Skipping the verification of Response Param &apos;field2&apos; as &apos;432000397298&apos;
+Skipping the verification of Response Param &apos;field3&apos; as &apos;20141116&apos;
+Verified &apos;Response Param &apos;field4&apos;&apos; as :-&apos;MC&apos;
+Skipping the verification of Response Param &apos;field5&apos; as &apos;397298&apos;
+Verified &apos;Response Param &apos;field6&apos;&apos; as :-&apos;00&apos;
+Verified &apos;Response Param &apos;field7&apos;&apos; as :-&apos;0&apos;
+Verified &apos;Response Param &apos;field8&apos;&apos; as :-&apos;3DS&apos;
+Skipping the verification of Response Param &apos;field9&apos; as &apos;Successful Verification of Secure Hash:  -- Approved -- Transaction Successful -- Unable to be determined--E219&apos;
+Skipping the verification of Response Param &apos;country&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;hash&apos; as &apos;2e9d457c899abee26bd009bc79e6e80a3652041cfbd129f18ec074d31b16a5bb088cb3008b3526d5144a85e53ee521ce18b9616e779c3ef7fd3fb78dc186ea06&apos;
+Verified &apos;Response Param &apos;firstname&apos;&apos; as :-&apos;TestingFirst&apos;
+Skipping the verification of Response Param &apos;zipcode&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;state&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;name_on_card&apos; as &apos;Test Card&apos;
+Verified &apos;Response Param &apos;net_amount_debit&apos;&apos; as :-&apos;1&apos;
+Skipping the verification of Response Param &apos;payment_source&apos; as &apos;payu&apos;
+&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/test_response
+&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-16-17_Test.AdminPanel.Payments.TestTransactionSeamless.test_CC_AXIS.png target=&apos;_blank&apos; &gt;2014-11-15_19-16-17_Test.AdminPanel.Payments.TestTransactionSeamless.test_CC_AXIS.png&lt;/a&gt;
+Failed to verify Test Response
+</system-out>
+  </testcase>
+  <testcase classname="Test.AdminPanel.Payments.TestTransactionSeamlessDC" name="test_DC_HDFC2" time="15.338">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+	at Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:788)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:764)
+	at Test.AdminPanel.Payments.TestTransactionSeamlessDC.test_DC_HDFC2(TestTransactionSeamlessDC.java:110)
+</failure>
+    <system-out>Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestTransactionSeamlessDC.test_DC_HDFC2&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:16:31 IST 2014&apos;
+Wait for page load by waiting for element [link text: Admin Login]
+Click on &apos;Admin Login link&apos;
+Wait for page load by waiting for element [id: username]
+Enter the User name as &apos;qc2&apos;
+Enter the Password as &apos;Password2&apos;
+Click on &apos;Submit Button&apos;
+Wait for page load by waiting for element [link text: Test Transaction]
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestTransactionSeamlessDC.test_DC_HDFC2&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:16:34 IST 2014&apos;
+Wait for page load by waiting for element [link text: Test Transaction]
+Click on &apos;Test Transaction Link&apos;
+Wait for page load by waiting for element [name: amount]
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select count(*) cnt from merchant_payment_type mpt where mpt.merchantid=&apos;5912&apos; and mpt.ibibo_code = &apos;MAST&apos; and mpt.pg_id = &apos;&apos; and mpt.active=1;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/testpay
+&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-16-38_Test.AdminPanel.Payments.TestTransactionSeamlessDC.test_DC_HDFC2.png target=&apos;_blank&apos; &gt;2014-11-15_19-16-38_Test.AdminPanel.Payments.TestTransactionSeamlessDC.test_DC_HDFC2.png&lt;/a&gt;
+Payment type MAST with pg_gateway_id  is NOT present for merchantid 5912
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select * from paymentgateway pg where pg.key = &apos;HDFCPG&apos; and pg.isactive=1;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+No data was returned for this query
+</system-out>
+  </testcase>
+  <testcase classname="Test.AdminPanel.Payments.TestTransactionCC" name="test_CC_AXIS" time="75.717">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Test.AdminPanel.Payments.TestTransactionCC.test_CC_AXIS(TestTransactionCC.java:472)
+</failure>
+    <system-out>Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestTransactionCC.test_CC_AXIS&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:16:59 IST 2014&apos;
+Wait for page load by waiting for element [link text: Admin Login]
+Click on &apos;Admin Login link&apos;
+Wait for page load by waiting for element [id: username]
+Enter the User name as &apos;qc2&apos;
+Enter the Password as &apos;Password2&apos;
+Click on &apos;Submit Button&apos;
+Wait for page load by waiting for element [link text: Test Transaction]
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.AdminPanel.Payments.TestTransactionCC.test_CC_AXIS&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:17:03 IST 2014&apos;
+Wait for page load by waiting for element [link text: Test Transaction]
+Click on &apos;Test Transaction Link&apos;
+Wait for page load by waiting for element [name: amount]
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select count(*) cnt from merchant_payment_type mpt where mpt.merchantid=&apos;5910&apos; and mpt.ibibo_code = &apos;CC&apos; and mpt.pg_id = &apos;&apos; and mpt.active=1;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/testpay
+&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-17-06_Test.AdminPanel.Payments.TestTransactionCC.test_CC_AXIS.png target=&apos;_blank&apos; &gt;2014-11-15_19-17-06_Test.AdminPanel.Payments.TestTransactionCC.test_CC_AXIS.png&lt;/a&gt;
+Payment type CC with pg_gateway_id  is NOT present for merchantid 5910
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Click on &apos;Merchant Drop Down&apos;
+Wait for &apos;1&apos; seconds
+Enter the Search Merchant Key as &apos; - QBKSbB&apos;
+Wait for &apos;2&apos; seconds
+Get the WebElement with xPath://label/span[contains(text(),&apos; - QBKSbB&apos;)]
+Click on &apos;Merchant&apos;
+Enter the Amount as &apos;1.00&apos;
+Enter the Email as &apos;payu.testing@gmail.com&apos;
+Enter the First Name as &apos;TestingFirst&apos;
+Submit &apos;Transaction&apos;
+Wait for page load by waiting for element [xpath: //p[@id=&apos;amountdiv&apos;]/span]
+Click on &apos;Credit Card Tab&apos;
+Wait for page load by waiting for element [id: cname_on_card]
+Click on &apos;Visa Master Card&apos;
+Wait for &apos;1&apos; seconds
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;CardDetails&apos;
+Enter the Name on Card as &apos;Test Card&apos;
+Enter the Card Number as &apos;5&apos;
+Enter the Card Number as &apos;1&apos;
+Enter the Card Number as &apos;2&apos;
+Enter the Card Number as &apos;3&apos;
+Enter the Card Number as &apos;4&apos;
+Enter the Card Number as &apos;5&apos;
+Enter the Card Number as &apos;6&apos;
+Enter the Card Number as &apos;7&apos;
+Enter the Card Number as &apos;8&apos;
+Enter the Card Number as &apos;9&apos;
+Enter the Card Number as &apos;0&apos;
+Enter the Card Number as &apos;1&apos;
+Enter the Card Number as &apos;2&apos;
+Enter the Card Number as &apos;3&apos;
+Enter the Card Number as &apos;4&apos;
+Enter the Card Number as &apos;6&apos;
+Enter the CVV as &apos;123&apos;
+Select the Expiry month dropdown value &apos;05&apos;
+Select the Expiry year dropdown value &apos;2017&apos;
+Click on &apos;Pay Now&apos;
+Wait for &apos;15&apos; seconds
+Wait for page load by waiting for element [tag name: pre]
+Verified &apos;Count of Response Parameters&apos; as :-&apos;50&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TestResponse&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select max(id) as mihpayid, merchantid, bank_ref_no as bank_ref_num, field9 as field9 from transaction where txnid = &apos;eb9b53050088b1eb5e45&apos;;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select card_token from txn_info where payu_id=&apos;403993715510413260&apos;;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+Verified &apos;Response Param &apos;amount&apos;&apos; as :-&apos;1.00&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;
+Expected &apos;Response Param &apos;PG_TYPE&apos;&apos; was :-&apos;&apos;. But actual is &apos;AXISPG&apos;
+Verified &apos;Response Param &apos;mode&apos;&apos; as :-&apos;CC&apos;
+Skipping the verification of Response Param &apos;phone&apos; as &apos;1234567890&apos;
+Skipping the verification of Response Param &apos;productinfo&apos; as &apos;Product Info&apos;
+Verified &apos;Response Param &apos;discount&apos;&apos; as :-&apos;0.00&apos;
+Verified &apos;Response Param &apos;addedon&apos;&apos; as :-&apos;2014-11-15 19:17:14&apos;
+Verified &apos;Response Param &apos;unmappedstatus&apos;&apos; as :-&apos;captured&apos;
+Verified &apos;Response Param &apos;mihpayid&apos;&apos; as :-&apos;403993715510413260&apos;
+Skipping the verification of Response Param &apos;address2&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;address1&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;city&apos; as &apos;&apos;
+Verified &apos;Response Param &apos;key&apos;&apos; as :-&apos;QBKSbB&apos;
+Verified &apos;Response Param &apos;bank_ref_num&apos;&apos; as :-&apos;199743&apos;
+Verified &apos;Response Param &apos;txnid&apos;&apos; as :-&apos;eb9b53050088b1eb5e45&apos;
+Verified &apos;Response Param &apos;email&apos;&apos; as :-&apos;payu.testing@gmail.com&apos;
+Verified &apos;Response Param &apos;bankcode&apos;&apos; as :-&apos;CC&apos;
+Verified &apos;Response Param &apos;error&apos;&apos; as :-&apos;E000&apos;
+Verified &apos;Response Param &apos;error_Message&apos;&apos; as :-&apos;No Error&apos;
+Skipping the verification of Response Param &apos;udf1&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf2&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf3&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf4&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;udf5&apos; as &apos;&apos;
+Verified &apos;Response Param &apos;udf6&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf7&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf8&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf9&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;udf10&apos;&apos; as :-&apos;&apos;
+Verified &apos;Response Param &apos;status&apos;&apos; as :-&apos;success&apos;
+Verified &apos;Response Param &apos;cardhash&apos;&apos; as :-&apos;This field is no longer supported in postback params.&apos;
+Verified &apos;Response Param &apos;cardnum&apos;&apos; as :-&apos;512345XXXXXX2346&apos;
+Skipping the verification of Response Param &apos;lastname&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;field1&apos; as &apos;199743&apos;
+Skipping the verification of Response Param &apos;field2&apos; as &apos;432000397379&apos;
+Skipping the verification of Response Param &apos;field3&apos; as &apos;20141116&apos;
+Verified &apos;Response Param &apos;field4&apos;&apos; as :-&apos;MC&apos;
+Skipping the verification of Response Param &apos;field5&apos; as &apos;397379&apos;
+Verified &apos;Response Param &apos;field6&apos;&apos; as :-&apos;00&apos;
+Verified &apos;Response Param &apos;field7&apos;&apos; as :-&apos;0&apos;
+Verified &apos;Response Param &apos;field8&apos;&apos; as :-&apos;3DS&apos;
+Skipping the verification of Response Param &apos;field9&apos; as &apos;Successful Verification of Secure Hash:  -- Approved -- Transaction Successful -- Unable to be determined--E219&apos;
+Skipping the verification of Response Param &apos;country&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;hash&apos; as &apos;4ee2e27d4847a03af1fec089aa2274cfb7794f885c4d912b6184a132b8b09b687c2bcffd321738282b969fa30a09d87fcd73534cdfc88ac7c01e9dae314feaf0&apos;
+Verified &apos;Response Param &apos;firstname&apos;&apos; as :-&apos;TestingFirst&apos;
+Skipping the verification of Response Param &apos;zipcode&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;state&apos; as &apos;&apos;
+Skipping the verification of Response Param &apos;name_on_card&apos; as &apos;Test Card&apos;
+Verified &apos;Response Param &apos;net_amount_debit&apos;&apos; as :-&apos;1&apos;
+Skipping the verification of Response Param &apos;payment_source&apos; as &apos;payu&apos;
+&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/test_response
+&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-18-07_Test.AdminPanel.Payments.TestTransactionCC.test_CC_AXIS.png target=&apos;_blank&apos; &gt;2014-11-15_19-18-07_Test.AdminPanel.Payments.TestTransactionCC.test_CC_AXIS.png&lt;/a&gt;
+Failed to verify Test Response
+</system-out>
+  </testcase>
+  <testcase classname="Test.MerchantPanel.Offers.TestOffers" name="test_VerifyValidOfferPaymentTypeCCAndDC" time="43.788">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at Test.AdminPanel.Payments.TransactionHelper.MakeGatewayAsStatusUp(TransactionHelper.java:968)
+	at Test.AdminPanel.Payments.TransactionHelper.VerifyIbiboCodePresentForMerchant(TransactionHelper.java:1087)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:788)
+	at Test.AdminPanel.Payments.TransactionHelper.DoTestTransaction(TransactionHelper.java:764)
+	at Test.MerchantPanel.Offers.TestOffers.test_VerifyValidOfferPaymentTypeCCAndDC(TestOffers.java:297)
+</failure>
+    <system-out>Navigate to web page- &apos;https://www.payu.in/index&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.MerchantPanel.Offers.TestOffers.test_VerifyValidOfferPaymentTypeCCAndDC&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:18:34 IST 2014&apos;
+Wait for page load by waiting for element [id: sign_in]
+Click on &apos;Signin&apos;
+Enter the User name as &apos;super&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Enter the Merchant alias as &apos;QBKSbB&apos;
+Enter the Password as &apos;Password&apos;
+Click on &apos;Signin&apos;
+Wait for page load by waiting for element [name: dropbox]
+Navigate to web page- &apos;https://info.payu.in/merchant/offerList&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.MerchantPanel.Offers.TestOffers.test_VerifyValidOfferPaymentTypeCCAndDC&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:18:48 IST 2014&apos;
+Wait for page load by waiting for element [link text: Create New Offer]
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PaymentType&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;TransactionDetails&apos;
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[1]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[2]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[3]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[4]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[5]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[6]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[7]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[8]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[9]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[10]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[11]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[12]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[13]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[14]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[1]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[2]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[3]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[4]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[5]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[6]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[7]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[8]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[9]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[10]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[11]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[12]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[13]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[14]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[1]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[2]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[3]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[4]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[5]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[6]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[7]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[8]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[9]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[10]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[11]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[12]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[13]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[14]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[1]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[2]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[3]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[4]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[5]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[6]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[7]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[8]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[9]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[10]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[11]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[12]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[13]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[14]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[1]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[2]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[3]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[4]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[5]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[6]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[7]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[8]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[9]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[10]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[11]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[12]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[13]
+Get the WebElement with xPath://html/body/div[1]/table/tbody/tr//td[.=&apos;ValidOffer&apos;]/../td[14]
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.MerchantPanel.Offers.TestOffers.test_VerifyValidOfferPaymentTypeCCAndDC&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:18:53 IST 2014&apos;
+Wait for page load by waiting for element [link text: Admin Login]
+Click on &apos;Admin Login link&apos;
+Wait for page load by waiting for element [id: username]
+Enter the User name as &apos;qc2&apos;
+Enter the Password as &apos;Password2&apos;
+Click on &apos;Submit Button&apos;
+Wait for page load by waiting for element [link text: Test Transaction]
+Navigate to web page- &apos;https://admin.payu.in/home&apos;
+Added the cookie - Name: &apos;test_name&apos; Value: &apos;Test.MerchantPanel.Offers.TestOffers.test_VerifyValidOfferPaymentTypeCCAndDC&apos; Domain: &apos;.payu.in&apos; Expiry: &apos;Sun Nov 16 19:18:55 IST 2014&apos;
+Wait for page load by waiting for element [link text: Test Transaction]
+Click on &apos;Test Transaction Link&apos;
+Wait for page load by waiting for element [name: amount]
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;PGInfo&apos;
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select count(*) cnt from merchant_payment_type mpt where mpt.merchantid=&apos;5910&apos; and mpt.ibibo_code = &apos;MAST&apos; and mpt.pg_id = &apos;&apos; and mpt.active=1;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+&lt;B&gt;Page URL&lt;/B&gt;:- https://admin.payu.in/testpay
+&lt;B&gt;Screenshot&lt;/B&gt;:- &lt;a href=html/2014-11-15_19-18-58_Test.MerchantPanel.Offers.TestOffers.test_VerifyValidOfferPaymentTypeCCAndDC.png target=&apos;_blank&apos; &gt;2014-11-15_19-18-58_Test.MerchantPanel.Offers.TestOffers.test_VerifyValidOfferPaymentTypeCCAndDC.png&lt;/a&gt;
+Payment type MAST with pg_gateway_id  is NOT present for merchantid 5910
+Get TestData Excel:-&apos;ProductTestData.xls&apos;, Sheet:- &apos;SQL&apos;
+Executing the query - &apos;select * from paymentgateway pg where pg.key = &apos;AXISPG&apos; and pg.isactive=1;&apos;
+Connecting to OFFLINE db:-jdbc:mysql://10.50.23.45/payu
+Connection succeeded
+No data was returned for this query
+</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" verbose="0" name="Failed suite [Product Automation]" parallel="methods">
+  <parameter name="environment" value="PPReplicaRelease"/>
+  <parameter name="parallelType" value="methods"/>
+  <parameter name="browser" value="Firefox"/>
+  <test name="SeamlessStoreCard(failed)" parallel="methods">
+    <groups>
+      <run>
+        <exclude name="none"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Test.MerchantPanel.Offers.TestOffers">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.MerchantPanel.Offers.TestOffers -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamless">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamless -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessRSA">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessRSA -->
+      <class name="Test.AdminPanel.Payments.TestTransactionNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionNB -->
+      <class name="Test.AdminPanel.Payments.TestTransactionDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionDC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionCC -->
+      <class name="Test.AdminPanel.IframePayments.TestIframeTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.IframePayments.TestIframeTransactionCC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessDC -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessStoreCard">
+        <methods>
+          <include name="Save_new_store_DCcard" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="testTransactionSavedSeamlessStoredcard" invocation-numbers="0"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessStoreCard -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessNB -->
+    </classes>
+  </test> <!-- SeamlessStoreCard(failed) -->
+  <test name="TestTransaction Seamless RSA(failed)" parallel="methods">
+    <groups>
+      <run>
+        <exclude name="none"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Test.MerchantPanel.Offers.TestOffers">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.MerchantPanel.Offers.TestOffers -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessRSA">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+          <include name="test_CC_RSA" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessRSA -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamless">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamless -->
+      <class name="Test.AdminPanel.Payments.TestTransactionNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionNB -->
+      <class name="Test.AdminPanel.Payments.TestTransactionDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionDC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionCC -->
+      <class name="Test.AdminPanel.IframePayments.TestIframeTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.IframePayments.TestIframeTransactionCC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessDC -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessStoreCard">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessStoreCard -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessNB -->
+    </classes>
+  </test> <!-- TestTransaction Seamless RSA(failed) -->
+  <test name="TestTransaction DebitCard(failed)" parallel="methods">
+    <groups>
+      <run>
+        <exclude name="none"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Test.MerchantPanel.Offers.TestOffers">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.MerchantPanel.Offers.TestOffers -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamless">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamless -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessRSA">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessRSA -->
+      <class name="Test.AdminPanel.Payments.TestTransactionDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="test_DC_HDFC2" invocation-numbers="0"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionDC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionNB -->
+      <class name="Test.AdminPanel.Payments.TestTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionCC -->
+      <class name="Test.AdminPanel.IframePayments.TestIframeTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.IframePayments.TestIframeTransactionCC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessDC -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessStoreCard">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessStoreCard -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessNB -->
+    </classes>
+  </test> <!-- TestTransaction DebitCard(failed) -->
+  <test name="TestIframeTransaction CreditCard(failed)" parallel="methods">
+    <groups>
+      <run>
+        <exclude name="none"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Test.MerchantPanel.Offers.TestOffers">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.MerchantPanel.Offers.TestOffers -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamless">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamless -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessRSA">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessRSA -->
+      <class name="Test.AdminPanel.Payments.TestTransactionNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionNB -->
+      <class name="Test.AdminPanel.Payments.TestTransactionDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionDC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionCC -->
+      <class name="Test.AdminPanel.IframePayments.TestIframeTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="test_IframeCC_HDFC2" invocation-numbers="0"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.IframePayments.TestIframeTransactionCC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessDC -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessStoreCard">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessStoreCard -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessNB -->
+    </classes>
+  </test> <!-- TestIframeTransaction CreditCard(failed) -->
+  <test name="Test Transaction Seamless COD(failed)" parallel="methods">
+    <groups>
+      <run>
+        <exclude name="none"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Test.MerchantPanel.Offers.TestOffers">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.MerchantPanel.Offers.TestOffers -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamless">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+          <include name="test_CC_AXIS" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamless -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessRSA">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessRSA -->
+      <class name="Test.AdminPanel.Payments.TestTransactionNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionNB -->
+      <class name="Test.AdminPanel.Payments.TestTransactionDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionDC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionCC -->
+      <class name="Test.AdminPanel.IframePayments.TestIframeTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.IframePayments.TestIframeTransactionCC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessDC -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessStoreCard">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessStoreCard -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessNB -->
+    </classes>
+  </test> <!-- Test Transaction Seamless COD(failed) -->
+  <test name="TestTransaction Seamless DC(failed)" parallel="methods">
+    <groups>
+      <run>
+        <exclude name="none"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Test.MerchantPanel.Offers.TestOffers">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.MerchantPanel.Offers.TestOffers -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamless">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamless -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessRSA">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessRSA -->
+      <class name="Test.AdminPanel.Payments.TestTransactionNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionNB -->
+      <class name="Test.AdminPanel.Payments.TestTransactionDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionDC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionCC -->
+      <class name="Test.AdminPanel.IframePayments.TestIframeTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.IframePayments.TestIframeTransactionCC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessDC">
+        <methods>
+          <include name="test_DC_HDFC2" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessDC -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessStoreCard">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessStoreCard -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessNB -->
+    </classes>
+  </test> <!-- TestTransaction Seamless DC(failed) -->
+  <test name="TestTransaction CreditCard(failed)" parallel="methods">
+    <groups>
+      <run>
+        <exclude name="none"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Test.MerchantPanel.Offers.TestOffers">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.MerchantPanel.Offers.TestOffers -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamless">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamless -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessRSA">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessRSA -->
+      <class name="Test.AdminPanel.Payments.TestTransactionNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionNB -->
+      <class name="Test.AdminPanel.Payments.TestTransactionDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionDC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionCC">
+        <methods>
+          <include name="test_CC_AXIS" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionCC -->
+      <class name="Test.AdminPanel.IframePayments.TestIframeTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.IframePayments.TestIframeTransactionCC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessDC -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessStoreCard">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessStoreCard -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessNB -->
+    </classes>
+  </test> <!-- TestTransaction CreditCard(failed) -->
+  <test name="Offers with additional charges(failed)" parallel="methods">
+    <groups>
+      <run>
+        <exclude name="none"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Test.MerchantPanel.Offers.TestOffers">
+        <methods>
+          <include name="tearDown"/>
+          <include name="test_VerifyValidOfferPaymentTypeCCAndDC" invocation-numbers="0"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.MerchantPanel.Offers.TestOffers -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamless">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamless -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessRSA">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessRSA -->
+      <class name="Test.AdminPanel.Payments.TestTransactionNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionNB -->
+      <class name="Test.AdminPanel.Payments.TestTransactionDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionDC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionCC -->
+      <class name="Test.AdminPanel.IframePayments.TestIframeTransactionCC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.IframePayments.TestIframeTransactionCC -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessDC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessDC -->
+      <class name="Test.AdminPanel.Payments.TestSeamlessStoreCard">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessStoreCard -->
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessNB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InitializeParameters"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessNB -->
+    </classes>
+  </test> <!-- Offers with additional charges(failed) -->
+</suite> <!-- Failed suite [Product Automation] -->

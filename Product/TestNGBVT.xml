@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" name="Product Automation" parallel="methods">
+  <parameter name="parallelType" value="methods"/>
+  <parameter name="environment" value="PPReplicaRelease"/>
+  <parameter name="browser" value="Firefox"/>
+  <test verbose="0" name="SeamlessStoreCard">
+    <classes>
+      <class name="Test.AdminPanel.Payments.TestSeamlessStoreCard">
+        <methods>
+          <include name="Save_new_store_DCcard"/>
+          <include name="SavedDebitCardTransaction"/>
+          <include name="testTransactionSavedSeamlessStoredcard"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessStoreCard -->
+    </classes>
+  </test> <!-- SeamlessStoreCard -->
+  <test verbose="0" name="TestTransaction NetBanking">
+    <classes>
+      <class name="Test.AdminPanel.Payments.TestTransactionNB">
+        <methods>
+          <include name="test_NB_AXISNB"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionNB -->
+    </classes>
+  </test> <!-- TestTransaction NetBanking -->
+  <test verbose="0" name="TestTransaction Seamless NB">
+    <classes>
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessNB">
+        <methods>
+          <include name="test_Seamless_NB_AXISNB"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessNB -->
+    </classes>
+  </test> <!-- TestTransaction Seamless NB -->
+  <test thread-count="1" verbose="0" name="TestTransaction Seamless RSA">
+    <classes>
+      <class name="Test.AdminPanel.Payments.TestSeamlessRSA">
+        <methods>
+          <include name="test_CC_RSA"/>
+          <include name="test_RSA_url"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestSeamlessRSA -->
+    </classes>
+  </test> <!-- TestTransaction Seamless RSA -->
+  <test verbose="0" name="TestTransaction DebitCard">
+    <classes>
+      <class name="Test.AdminPanel.Payments.TestTransactionDC">
+        <methods>
+          <include name="test_DC_HDFC2"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionDC -->
+    </classes>
+  </test> <!-- TestTransaction DebitCard -->
+  <test verbose="0" name="TestIframeTransaction CreditCard">
+    <classes>
+      <class name="Test.AdminPanel.IframePayments.TestIframeTransactionCC">
+        <methods>
+          <include name="test_IframeCC_HDFC2"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.IframePayments.TestIframeTransactionCC -->
+    </classes>
+  </test> <!-- TestIframeTransaction CreditCard -->
+  <test verbose="0" name="Test Transaction Seamless COD">
+    <classes>
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamless">
+        <methods>
+          <include name="test_CC_AXIS"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamless -->
+    </classes>
+  </test> <!-- Test Transaction Seamless COD -->
+  <test verbose="0" name="TestTransaction Seamless DC">
+    <classes>
+      <class name="Test.AdminPanel.Payments.TestTransactionSeamlessDC">
+        <methods>
+          <include name="test_DC_HDFC2"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionSeamlessDC -->
+    </classes>
+  </test> <!-- TestTransaction Seamless DC -->
+  <test verbose="0" name="TestTransaction CreditCard">
+    <classes>
+      <class name="Test.AdminPanel.Payments.TestTransactionCC">
+        <methods>
+          <include name="test_CC_AXIS"/>
+        </methods>
+      </class> <!-- Test.AdminPanel.Payments.TestTransactionCC -->
+    </classes>
+  </test> <!-- TestTransaction CreditCard -->
+  <test verbose="0" name="Offers with additional charges">
+    <classes>
+      <class name="Test.MerchantPanel.Offers.TestOffers">
+        <methods>
+          <include name="test_VerifyValidOfferPaymentTypeCCAndDC"/>
+        </methods>
+      </class> <!-- Test.MerchantPanel.Offers.TestOffers -->
+    </classes>
+  </test> <!-- Offers with additional charges -->
+</suite> <!-- Product Automation -->
